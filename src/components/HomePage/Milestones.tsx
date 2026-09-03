@@ -117,7 +117,7 @@ export function Milestones() {
         
         {/* Header Area (Centered) */}
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-12 sm:mb-16">
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-[44px] text-[#132026] leading-tight">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-[46px] text-[#132026] tracking-tight leading-[1.18]">
             Our Journey & <span className="text-[#8C6239]">Defining Milestones</span>
           </h2>
 

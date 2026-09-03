@@ -9,8 +9,8 @@ export function RequestQuote() {
       <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         
         {/* Serif Headline */}
-        <h2 className="font-serif text-4xl sm:text-5xl lg:text-[54px] font-normal text-[#2B1E16] leading-tight mb-4 tracking-tight">
-          Request a Quote
+        <h2 className="font-serif text-3xl sm:text-4xl lg:text-[46px] text-[#132026] tracking-tight leading-[1.18] mb-4">
+          Request a <span className="text-[#8C6239]">Quote</span>
         </h2>
 
         {/* Subtitle */}

@@ -153,26 +153,26 @@ export function Footer() {
             
             <div className="space-y-4 text-xs sm:text-[13px] text-[#FAF8F5]/75">
               <div className="flex items-start gap-3.5">
-                <div className="w-9 h-9 rounded-lg bg-white/[0.08] border border-white/15 backdrop-blur-md flex items-center justify-center text-[#C5A25D] shrink-0 mt-0.5">
+                <a
+                  href="https://maps.app.goo.gl/xxGh9jYiQ2PKpQR99"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open showroom location in Google Maps"
+                  className="w-9 h-9 rounded-lg bg-white/[0.08] border border-white/15 backdrop-blur-md flex items-center justify-center text-[#C5A25D] hover:text-white hover:border-[#C5A25D] shrink-0 mt-0.5 transition-all"
+                >
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                     <circle cx="12" cy="10" r="3" />
                   </svg>
-                </div>
+                </a>
                 <div>
-                  <p className="leading-relaxed">
-                    Agrabad Access Road (opposite RAK Ceramics), Chattogram, Bangladesh
-                  </p>
                   <a
                     href="https://maps.app.goo.gl/xxGh9jYiQ2PKpQR99"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-xs text-[#C5A25D] hover:underline mt-1.5"
+                    className="leading-relaxed hover:text-white transition-colors block"
                   >
-                    <span>View on Google Maps</span>
-                    <svg className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                    </svg>
+                    Agrabad Access Road (opposite RAK Ceramics), Chattogram, Bangladesh
                   </a>
                 </div>
               </div>

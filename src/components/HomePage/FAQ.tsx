@@ -62,9 +62,9 @@ export function FAQ() {
           {/* LEFT SIDE: Heading & Context */}
           <div className="lg:col-span-5 space-y-6">
             {/* Display Headline */}
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[44px] text-[#132026] leading-[1.18] tracking-tight">
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[46px] text-[#132026] tracking-tight leading-[1.18]">
               Got <br />
-              Questions?
+              <span className="text-[#8C6239]">Questions?</span>
             </h2>
 
             {/* Subtitle */}

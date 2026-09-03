@@ -56,8 +56,8 @@ export function AboutUs() {
           <div className="lg:col-span-5 space-y-6 sm:space-y-7 text-left">
 
             {/* Headline in Playfair Serif */}
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[44px] text-[#132026] leading-[1.18] tracking-tight">
-              About Us
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[46px] text-[#132026] tracking-tight leading-[1.18]">
+              About <span className="text-[#8C6239]">Us</span>
             </h2>
 
             {/* Main Brand Description (Removed 'Founded in 2020 by Managing Director Abul Kalam Bhuiyan,') */}

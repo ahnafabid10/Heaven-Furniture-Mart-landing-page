@@ -71,9 +71,9 @@ export function Testimonials() {
           {/* LEFT SIDE: Heading with Hollow Outline typography */}
           <div className="lg:col-span-5 space-y-6">
             {/* Display Headline */}
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[44px] text-[#132026] leading-[1.18] tracking-tight">
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[46px] text-[#132026] tracking-tight leading-[1.18]">
               Client <br />
-              Success Stories
+              <span className="text-[#8C6239]">Success Stories</span>
             </h2>
 
             {/* Subtitle */}

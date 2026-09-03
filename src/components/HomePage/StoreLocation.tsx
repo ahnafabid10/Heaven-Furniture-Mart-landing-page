@@ -13,7 +13,7 @@ export function StoreLocation() {
         
         {/* Section Header (Left-aligned) */}
         <div className="text-left max-w-3xl space-y-3 mb-10 sm:mb-14">
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-[44px] text-[#132026] leading-tight">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-[46px] text-[#132026] tracking-tight leading-[1.18]">
             Visit Our <span className="text-[#8C6239]">Agrabad Showroom</span>
           </h2>
 

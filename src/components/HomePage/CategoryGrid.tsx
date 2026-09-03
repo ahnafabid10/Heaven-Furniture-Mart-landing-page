@@ -87,8 +87,8 @@ export function CategoryGrid() {
         
         {/* Section Header */}
         <div className="text-left max-w-2xl mb-10 sm:mb-12 space-y-3">
-          <h2 className="font-serif text-2xl sm:text-4xl lg:text-[42px] text-[#132026] tracking-tight">
-            Explore By Category
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-[46px] text-[#132026] tracking-tight leading-[1.18]">
+            Explore By <span className="text-[#8C6239]">Category</span>
           </h2>
           <p className="text-sm sm:text-base text-[#2B1E16]/75 font-normal leading-relaxed">
             Handcrafted with solid seasoned wood and bespoke tailoring for every room of your residence.
