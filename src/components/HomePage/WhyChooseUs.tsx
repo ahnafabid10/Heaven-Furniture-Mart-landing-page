@@ -7,14 +7,6 @@ export function WhyChooseUs() {
   return (
     <section className="w-full bg-[#FAF8F5] py-16 sm:py-20 lg:py-24 border-b border-[#2B1E16]/10" id="why-choose-us">
       <div className="w-full max-w-[1560px] mx-auto px-4 sm:px-6 lg:px-12">
-        
-        {/* Eyebrow Pill Tag */}
-        <div className="inline-flex items-center px-4 py-1.5 rounded-lg border border-[#2B1E16]/20 bg-white/60 mb-4">
-          <span className="text-xs uppercase tracking-[0.18em] text-[#2B1E16]/75">
-            WHY CHOOSE US
-          </span>
-        </div>
-
         {/* Section Headline */}
         <h2 className="font-serif text-3xl sm:text-4xl lg:text-[46px] text-[#132026] tracking-tight leading-[1.18] mb-10 sm:mb-12">
           Why <span className="text-[#8C6239]">Heaven Furniture Mart</span> is The Right Choice for You
