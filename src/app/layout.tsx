@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { CookieConsent } from "@/components/shared/CookieConsent/CookieConsent";
 
@@ -38,6 +39,11 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col font-sans bg-[#FAF8F5] text-[#2B1E16]">
         {children}
         <CookieConsent />
+        <Script
+          src="https://api.labtoai.com/widget.js"
+          data-api-key="aiw_live_7b57d94c12af7286e48f8b334e0f34f2f39c4f63ab006c05"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
