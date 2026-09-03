@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -81,18 +81,16 @@ const CATEGORIES_DATA: CategoryCard[] = [
 ];
 
 export function CategoryGrid() {
-  const [activeCard, setActiveCard] = useState<string | null>(null);
-
   return (
     <section className="w-full bg-[#FAF8F5] py-16 sm:py-20 lg:py-24" id="collections">
       <div className="w-full max-w-[1560px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
-          <p className="text-[11px] sm:text-xs uppercase font-bold tracking-[0.25em] text-[#C5A25D] mb-2.5">
+          <p className="text-[11px] sm:text-xs uppercase tracking-[0.25em] text-[#C5A25D] mb-2.5">
             Curated Collections · Heaven Furniture Mart
           </p>
-          <h2 className="font-serif text-2xl sm:text-4xl lg:text-[42px] font-bold text-[#132026] tracking-tight">
+          <h2 className="font-serif text-2xl sm:text-4xl lg:text-[42px] text-[#132026] tracking-tight">
             Explore By Category
           </h2>
           <div className="w-12 h-0.5 bg-[#C5A25D] mx-auto my-3.5" />
@@ -110,7 +108,7 @@ export function CategoryGrid() {
                 href={card.href}
                 onMouseEnter={() => setActiveCard(card.id)}
                 onMouseLeave={() => setActiveCard(null)}
-                className="group relative aspect-[4/5] sm:aspect-[3/4] w-full overflow-hidden rounded-md sm:rounded-lg shadow-[0_2px_10px_rgba(0,0,0,0.06)] bg-neutral-900 block cursor-pointer transition-all duration-300 hover:shadow-2xl"
+                className="group relative aspect-[4/5] sm:aspect-[3/4] w-full overflow-hidden rounded-lg sm:rounded-lg bg-neutral-900 block cursor-pointer transition-all duration-300"
               >
                 {/* Product Image */}
                 <Image
@@ -132,7 +130,7 @@ export function CategoryGrid() {
                 <div className="absolute bottom-0 inset-x-0 p-4 sm:p-5 lg:p-6 z-20 flex flex-col items-center text-center">
                   
                   {/* Category Name */}
-                  <h3 className="text-white font-sans font-semibold text-xs sm:text-sm lg:text-[15px] tracking-[0.14em] uppercase drop-shadow-sm transition-transform duration-300 group-hover:-translate-y-1">
+                  <h3 className="text-white font-sans text-xs sm:text-sm lg:text-[15px] tracking-[0.14em] uppercase transition-transform duration-300 group-hover:-translate-y-1">
                     {card.category}
                   </h3>
 
@@ -144,7 +142,7 @@ export function CategoryGrid() {
                   </div>
 
                   {/* Subtle Gold Indicator Line at Bottom */}
-                  <div className="w-0 group-hover:w-10 h-0.5 bg-[#C5A25D] mt-2 transition-all duration-300 ease-out rounded-full" />
+                  <div className="w-0 group-hover:w-10 h-0.5 bg-[#C5A25D] mt-2 transition-all duration-300 ease-out rounded-lg" />
                 </div>
               </Link>
             );
@@ -157,3 +155,4 @@ export function CategoryGrid() {
 }
 
 export default CategoryGrid;
+

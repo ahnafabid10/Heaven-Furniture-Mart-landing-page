@@ -9,7 +9,7 @@ export function RequestQuote() {
       <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         
         {/* Eyebrow */}
-        <div className="text-xs sm:text-[13px] font-bold tracking-[0.25em] uppercase text-[#8C6239] mb-3">
+        <div className="text-xs sm:text-[13px] tracking-[0.25em] uppercase text-[#8C6239] mb-3">
           GET IN TOUCH
         </div>
 
@@ -29,7 +29,7 @@ export function RequestQuote() {
             href="https://chat.whatsapp.com/FTk1VXPtsG8J3yJSiTHmZy?mode=gi_t"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2.5 px-8 sm:px-10 py-4 rounded-sm bg-[#9E7748] hover:bg-[#8B673A] text-white text-xs sm:text-sm font-bold tracking-[0.18em] uppercase transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 select-none"
+            className="inline-flex items-center justify-center gap-2.5 px-8 sm:px-10 py-4 rounded-lg bg-[#9E7748] hover:bg-[#8B673A] text-white text-xs sm:text-sm tracking-[0.18em] uppercase transition-all duration-200 hover:-translate-y-0.5 select-none"
           >
             {/* WhatsApp Icon */}
             <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
@@ -45,3 +45,4 @@ export function RequestQuote() {
 }
 
 export default RequestQuote;
+

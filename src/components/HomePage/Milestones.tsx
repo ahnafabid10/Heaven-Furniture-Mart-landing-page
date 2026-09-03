@@ -117,14 +117,14 @@ export function Milestones() {
         
         {/* Header Area */}
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#2B1E16]/20 bg-white/70 shadow-xs">
-            <span className="w-2 h-2 rounded-full bg-[#C5A25D]" />
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#8C6239]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-lg border border-[#2B1E16]/20 bg-white/70">
+            <span className="w-2 h-2 rounded-lg bg-[#C5A25D]" />
+            <span className="text-xs uppercase tracking-[0.2em] text-[#8C6239]">
               PROOF & MILESTONES
             </span>
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-[44px] font-bold text-[#132026] leading-tight">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-[44px] text-[#132026] leading-tight">
             Our Journey & <span className="text-[#8C6239]">Defining Milestones</span>
           </h2>
 
@@ -211,20 +211,20 @@ export function Milestones() {
           <div className="relative z-10 mb-16 sm:mb-20">
             <div
               ref={card1Ref}
-              className="w-full md:w-[48%] relative rounded-3xl pt-10 pb-7 px-6 sm:px-8 bg-gradient-to-br from-[#132026] via-[#1b2b33] to-[#101b20] text-white shadow-xl border border-[#132026] hover:-translate-y-1 transition-all duration-300"
+              className="w-full md:w-[48%] relative rounded-lg pt-10 pb-7 px-6 sm:px-8 bg-gradient-to-br from-[#132026] via-[#1b2b33] to-[#101b20] text-white border border-[#132026] hover:-translate-y-1 transition-all duration-300"
             >
               {/* Floating Icon overlapping top border */}
-              <div className="absolute -top-7 left-6 sm:left-8 z-20 w-14 h-14 rounded-full bg-gradient-to-tr from-amber-400 to-amber-300 border-4 border-white shadow-lg flex items-center justify-center text-[#132026]">
+              <div className="absolute -top-7 left-6 sm:left-8 z-20 w-14 h-14 rounded-lg bg-gradient-to-tr from-amber-400 to-amber-300 border-4 border-white flex items-center justify-center text-[#132026]">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                   <circle cx="12" cy="12" r="10" />
                   <polyline points="12 6 12 12 16 14" />
                 </svg>
               </div>
 
-              <div className="inline-block px-3 py-1 rounded-full bg-[#C5A25D]/25 border border-[#C5A25D]/50 text-[#C5A25D] text-xs font-bold tracking-wider uppercase mb-2">
+              <div className="inline-block px-3 py-1 rounded-lg bg-[#C5A25D]/25 border border-[#C5A25D]/50 text-[#C5A25D] text-xs tracking-wider uppercase mb-2">
                 2020 · FOUNDING
               </div>
-              <h3 className="font-serif text-xl sm:text-2xl font-bold text-white mb-2.5">
+              <h3 className="font-serif text-xl sm:text-2xl text-white mb-2.5">
                 Founded by Abul Kalam Bhuiyan
               </h3>
               <p className="text-sm sm:text-[14px] text-[#FAF8F5]/80 font-light leading-relaxed">
@@ -237,22 +237,22 @@ export function Milestones() {
           <div className="relative z-10 mb-16 sm:mb-20 flex justify-end">
             <div
               ref={card2Ref}
-              className={`w-full md:w-[48%] relative rounded-3xl pt-10 pb-7 px-6 sm:px-8 bg-white text-[#2B1E16] shadow-md border hover:-translate-y-1 transition-all duration-500 ${
-                reachedStep >= 2 ? "border-[#C5A25D]/40 shadow-lg" : "border-[#2B1E16]/10"
+              className={`w-full md:w-[48%] relative rounded-lg pt-10 pb-7 px-6 sm:px-8 bg-white text-[#2B1E16]  border hover:-translate-y-1 transition-all duration-500 ${
+                reachedStep >= 2 ? "border-[#C5A25D]/40 " : "border-[#2B1E16]/10"
               }`}
             >
               {/* Floating Icon overlapping top border */}
-              <div className="absolute -top-7 left-6 sm:left-8 z-20 w-14 h-14 rounded-full bg-gradient-to-tr from-sky-400 to-sky-300 border-4 border-white shadow-lg flex items-center justify-center text-[#132026]">
+              <div className="absolute -top-7 left-6 sm:left-8 z-20 w-14 h-14 rounded-lg bg-gradient-to-tr from-sky-400 to-sky-300 border-4 border-white flex items-center justify-center text-[#132026]">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                   <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
                   <polyline points="9 22 9 12 15 12 15 22" />
                 </svg>
               </div>
 
-              <div className="inline-block px-3 py-1 rounded-full bg-[#8C6239]/10 text-[#8C6239] text-xs font-bold tracking-wider uppercase mb-2">
+              <div className="inline-block px-3 py-1 rounded-lg bg-[#8C6239]/10 text-[#8C6239] text-xs tracking-wider uppercase mb-2">
                 2021 · FLAGSHIP STUDIO
               </div>
-              <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#132026] mb-2.5">
+              <h3 className="font-serif text-xl sm:text-2xl text-[#132026] mb-2.5">
                 Opened the Agrabad Showroom
               </h3>
               <p className="text-sm sm:text-[14px] text-[#2B1E16]/75 leading-relaxed">
@@ -265,22 +265,22 @@ export function Milestones() {
           <div className="relative z-10 mb-16 sm:mb-20">
             <div
               ref={card3Ref}
-              className={`w-full md:w-[48%] relative rounded-3xl pt-10 pb-7 px-6 sm:px-8 bg-white text-[#2B1E16] shadow-md border hover:-translate-y-1 transition-all duration-500 ${
-                reachedStep >= 3 ? "border-[#C5A25D]/40 shadow-lg" : "border-[#2B1E16]/10"
+              className={`w-full md:w-[48%] relative rounded-lg pt-10 pb-7 px-6 sm:px-8 bg-white text-[#2B1E16]  border hover:-translate-y-1 transition-all duration-500 ${
+                reachedStep >= 3 ? "border-[#C5A25D]/40 " : "border-[#2B1E16]/10"
               }`}
             >
               {/* Floating Icon */}
-              <div className="absolute -top-7 left-6 sm:left-8 z-20 w-14 h-14 rounded-full bg-gradient-to-tr from-amber-400 to-amber-300 border-4 border-white shadow-lg flex items-center justify-center text-[#132026]">
+              <div className="absolute -top-7 left-6 sm:left-8 z-20 w-14 h-14 rounded-lg bg-gradient-to-tr from-amber-400 to-amber-300 border-4 border-white flex items-center justify-center text-[#132026]">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                   <circle cx="11" cy="11" r="8" />
                   <line x1="21" y1="21" x2="16.65" y2="16.65" />
                 </svg>
               </div>
 
-              <div className="inline-block px-3 py-1 rounded-full bg-[#8C6239]/10 text-[#8C6239] text-xs font-bold tracking-wider uppercase mb-2">
+              <div className="inline-block px-3 py-1 rounded-lg bg-[#8C6239]/10 text-[#8C6239] text-xs tracking-wider uppercase mb-2">
                 2024–2025 · INTERNATIONAL EXHIBITION
               </div>
-              <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#132026] mb-2.5">
+              <h3 className="font-serif text-xl sm:text-2xl text-[#132026] mb-2.5">
                 Exhibited at International Furniture Fair
               </h3>
               <p className="text-sm sm:text-[14px] text-[#2B1E16]/75 leading-relaxed">
@@ -293,21 +293,21 @@ export function Milestones() {
           <div className="relative z-10 mb-16 sm:mb-20 flex justify-end">
             <div
               ref={card4Ref}
-              className={`w-full md:w-[48%] relative rounded-3xl pt-10 pb-7 px-6 sm:px-8 bg-white text-[#2B1E16] shadow-md border hover:-translate-y-1 transition-all duration-500 ${
-                reachedStep >= 4 ? "border-[#C5A25D]/40 shadow-lg" : "border-[#2B1E16]/10"
+              className={`w-full md:w-[48%] relative rounded-lg pt-10 pb-7 px-6 sm:px-8 bg-white text-[#2B1E16]  border hover:-translate-y-1 transition-all duration-500 ${
+                reachedStep >= 4 ? "border-[#C5A25D]/40 " : "border-[#2B1E16]/10"
               }`}
             >
               {/* Floating Icon */}
-              <div className="absolute -top-7 left-6 sm:left-8 z-20 w-14 h-14 rounded-full bg-gradient-to-tr from-emerald-400 to-teal-300 border-4 border-white shadow-lg flex items-center justify-center text-[#132026]">
+              <div className="absolute -top-7 left-6 sm:left-8 z-20 w-14 h-14 rounded-lg bg-gradient-to-tr from-emerald-400 to-teal-300 border-4 border-white flex items-center justify-center text-[#132026]">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                 </svg>
               </div>
 
-              <div className="inline-block px-3 py-1 rounded-full bg-[#8C6239]/10 text-[#8C6239] text-xs font-bold tracking-wider uppercase mb-2">
+              <div className="inline-block px-3 py-1 rounded-lg bg-[#8C6239]/10 text-[#8C6239] text-xs tracking-wider uppercase mb-2">
                 2025 · INDUSTRY MEMBERSHIP
               </div>
-              <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#132026] mb-2.5">
+              <h3 className="font-serif text-xl sm:text-2xl text-[#132026] mb-2.5">
                 Member of the Chamber of Commerce
               </h3>
               <p className="text-sm sm:text-[14px] text-[#2B1E16]/75 leading-relaxed">
@@ -320,14 +320,14 @@ export function Milestones() {
           <div className="relative z-10 flex justify-center">
             <div
               ref={card5Ref}
-              className={`w-full md:w-[68%] relative rounded-3xl pt-12 pb-8 px-7 sm:px-10 bg-gradient-to-b from-white to-amber-50/50 shadow-xl text-center hover:-translate-y-1 transition-all duration-700 ${
+              className={`w-full md:w-[68%] relative rounded-lg pt-12 pb-8 px-7 sm:px-10 bg-gradient-to-b from-white to-amber-50/50  text-center hover:-translate-y-1 transition-all duration-700 ${
                 reachedStep >= 5
-                  ? "border-2 border-[#C5A25D] shadow-[0_12px_40px_rgba(197,162,93,0.18)]"
+                  ? "border-2 border-[#C5A25D] "
                   : "border border-[#2B1E16]/10"
               }`}
             >
               {/* Floating Gold Trophy Icon centered */}
-              <div className="absolute -top-7 left-1/2 -translate-x-1/2 z-20 w-16 h-16 rounded-full bg-gradient-to-tr from-amber-400 via-[#C5A25D] to-amber-200 border-4 border-white shadow-xl flex items-center justify-center text-[#132026]">
+              <div className="absolute -top-7 left-1/2 -translate-x-1/2 z-20 w-16 h-16 rounded-lg bg-gradient-to-tr from-amber-400 via-[#C5A25D] to-amber-200 border-4 border-white flex items-center justify-center text-[#132026]">
                 <svg className="w-7 h-7 text-[#132026]" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                   <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
                   <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
@@ -337,11 +337,11 @@ export function Milestones() {
                 </svg>
               </div>
 
-              <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-[#C5A25D]/20 border border-[#C5A25D]/50 text-[#8C6239] text-xs font-bold tracking-wider uppercase mb-3">
+              <div className="inline-flex items-center gap-2 px-4 py-1 rounded-lg bg-[#C5A25D]/20 border border-[#C5A25D]/50 text-[#8C6239] text-xs tracking-wider uppercase mb-3">
                 <span className="text-sm">🏆</span>
                 <span>2026 · 1ST PRIZE AWARD</span>
               </div>
-              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#132026] mb-3">
+              <h3 className="font-serif text-2xl sm:text-3xl text-[#132026] mb-3">
                 Received Nationwide BFIOA Recognition
               </h3>
               <p className="text-sm sm:text-base text-[#2B1E16]/80 leading-relaxed max-w-xl mx-auto">
@@ -358,3 +358,4 @@ export function Milestones() {
 }
 
 export default Milestones;
+

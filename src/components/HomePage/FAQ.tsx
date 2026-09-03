@@ -58,8 +58,8 @@ export function FAQ() {
   return (
     <section className="w-full bg-[#132026] text-white py-20 sm:py-24 lg:py-28 relative overflow-hidden border-b border-[#2B1E16]/20" id="faq">
       {/* Subtle ambient luxury glow */}
-      <div className="absolute -top-32 -left-32 w-96 h-96 bg-[#C5A25D]/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-[#1a2e36] rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -top-32 -left-32 w-96 h-96 bg-[#C5A25D]/10 rounded-lg blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-[#1a2e36] rounded-lg blur-3xl pointer-events-none" />
 
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
@@ -67,12 +67,12 @@ export function FAQ() {
           {/* LEFT SIDE: Heading & Context matching reference */}
           <div className="lg:col-span-5 space-y-6">
             {/* Eyebrow */}
-            <div className="text-xs font-bold tracking-[0.25em] uppercase text-[#C5A25D]">
+            <div className="text-xs tracking-[0.25em] uppercase text-[#C5A25D]">
               FAQS
             </div>
 
             {/* Display Headline: "Got" (solid) + "Questions?" (hollow outline) */}
-            <h2 className="text-4xl sm:text-5xl lg:text-[56px] font-bold tracking-tight text-white leading-[1.08]">
+            <h2 className="text-4xl sm:text-5xl lg:text-[56px] tracking-tight text-white leading-[1.08]">
               Got <br />
               <span
                 className="text-transparent inline-block mt-1"
@@ -95,7 +95,7 @@ export function FAQ() {
                 href="https://chat.whatsapp.com/FTk1VXPtsG8J3yJSiTHmZy?mode=gi_t"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-[#C5A25D] hover:text-[#d6b572] transition-colors group"
+                className="inline-flex items-center gap-2 text-xs sm:text-sm text-[#C5A25D] hover:text-[#d6b572] transition-colors group"
               >
                 <span>Need custom styling advice? WhatsApp our team</span>
                 <span className="group-hover:translate-x-1 transition-transform">→</span>
@@ -111,9 +111,9 @@ export function FAQ() {
               return (
                 <div
                   key={faq.id}
-                  className={`rounded-2xl transition-all duration-300 border ${
+                  className={`rounded-lg transition-all duration-300 border ${
                     isOpen
-                      ? "bg-white/[0.08] border-[#C5A25D]/50 shadow-lg"
+                      ? "bg-white/[0.08] border-[#C5A25D]/50 "
                       : "bg-white/[0.04] border-white/10 hover:border-white/25 hover:bg-white/[0.06]"
                   }`}
                 >
@@ -129,7 +129,7 @@ export function FAQ() {
 
                     {/* Plus / Minus Circular Toggle Button */}
                     <div
-                      className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 border transition-all duration-300 ${
+                      className={`w-8 h-8 rounded-lg flex items-center justify-center shrink-0 border transition-all duration-300 ${
                         isOpen
                           ? "bg-[#C5A25D] border-[#C5A25D] text-[#132026] rotate-45"
                           : "bg-white/10 border-white/15 text-white/80"
@@ -160,3 +160,4 @@ export function FAQ() {
 }
 
 export default FAQ;
+

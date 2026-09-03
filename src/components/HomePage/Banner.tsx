@@ -7,7 +7,6 @@ import Link from "next/link";
 export interface BannerProps {
   headline?: string;
   subheadline?: string;
-  tagline?: string;
   primaryCtaText?: string;
   primaryCtaHref?: string;
   secondaryCtaText?: string;
@@ -15,7 +14,6 @@ export interface BannerProps {
 }
 
 export function Banner({
-  tagline = "BESPOKE CRAFTSMANSHIP · AGRABAD, CHATTOGRAM",
   headline = "Furniture, Crafted Around You.",
   subheadline = "At Heaven Furniture Mart, we don't build off the shelf. From hand-carved royal suites to contemporary modular living, every piece is sculpted to your space, aesthetic, and lifestyle.",
   primaryCtaText = "Book Free Design Consultation",
@@ -49,7 +47,7 @@ export function Banner({
         <div className="max-w-2xl lg:max-w-3xl space-y-6 sm:space-y-7 text-left">
           
           {/* Strong Headline in Serif */}
-          <h1 className="font-serif text-3xl sm:text-5xl lg:text-[56px] xl:text-[64px] font-bold text-[#FAF8F5] leading-[1.12] tracking-tight">
+          <h1 className="font-serif text-3xl sm:text-5xl lg:text-[56px] xl:text-[64px] text-[#FAF8F5] leading-[1.12] tracking-tight">
             {headline}
           </h1>
 
@@ -61,7 +59,7 @@ export function Banner({
           {/* Brand Motto Callout */}
           <div className="flex items-center gap-3 pt-1">
             <span className="h-px w-10 bg-[#C5A25D]" />
-            <span className="text-xs sm:text-sm font-semibold tracking-[0.18em] uppercase text-[#C5A25D]">
+            <span className="text-xs sm:text-sm tracking-[0.18em] uppercase text-[#C5A25D]">
               Designed · Crafted · Customized
             </span>
           </div>
@@ -73,7 +71,7 @@ export function Banner({
               href={primaryCtaHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2.5 px-7 sm:px-8 py-3.5 sm:py-4 rounded bg-[#C5A25D] text-[#132026] text-sm sm:text-[15px] font-bold tracking-wide shadow-[0_4px_20px_rgba(197,162,93,0.35)] hover:bg-[#d6b572] hover:shadow-[0_6px_25px_rgba(197,162,93,0.45)] hover:-translate-y-0.5 transition-all duration-200"
+              className="inline-flex items-center justify-center gap-2.5 px-7 sm:px-8 py-3.5 sm:py-4 rounded-lg bg-[#C5A25D] text-[#132026] text-sm sm:text-[15px] tracking-wide hover:bg-[#d6b572] hover:-translate-y-0.5 transition-all duration-200"
             >
               <span>{primaryCtaText}</span>
               <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
@@ -84,7 +82,7 @@ export function Banner({
             {/* Secondary CTA */}
             <Link
               href={secondaryCtaHref}
-              className="inline-flex items-center justify-center gap-2 px-6 sm:px-7 py-3.5 sm:py-4 rounded border border-[#FAF8F5]/35 hover:border-[#C5A25D] text-[#FAF8F5] hover:text-[#C5A25D] text-sm sm:text-[15px] font-medium tracking-wide bg-[#132026]/40 hover:bg-[#132026]/70 backdrop-blur-sm transition-all duration-200"
+              className="inline-flex items-center justify-center gap-2 px-6 sm:px-7 py-3.5 sm:py-4 rounded-lg border border-[#FAF8F5]/35 hover:border-[#C5A25D] text-[#FAF8F5] hover:text-[#C5A25D] text-sm sm:text-[15px] font-medium tracking-wide bg-[#132026]/40 hover:bg-[#132026]/70 backdrop-blur-sm transition-all duration-200"
             >
               <span>{secondaryCtaText}</span>
               <span>↓</span>
@@ -94,28 +92,28 @@ export function Banner({
           {/* Trust Highlights Strip */}
           <div className="pt-8 sm:pt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-[#FAF8F5]/15">
             <div className="space-y-1">
-              <div className="text-[#C5A25D] text-xs font-semibold uppercase tracking-wider flex items-center gap-1.5">
+              <div className="text-[#C5A25D] text-xs uppercase tracking-wider flex items-center gap-1.5">
                 <span>✦</span> Free Consultation
               </div>
               <p className="text-xs text-[#FAF8F5]/70">One-on-one interior planning</p>
             </div>
 
             <div className="space-y-1">
-              <div className="text-[#C5A25D] text-xs font-semibold uppercase tracking-wider flex items-center gap-1.5">
+              <div className="text-[#C5A25D] text-xs uppercase tracking-wider flex items-center gap-1.5">
                 <span>✦</span> 100% Solid Wood
               </div>
               <p className="text-xs text-[#FAF8F5]/70">Premium teak & seasoned timber</p>
             </div>
 
             <div className="space-y-1">
-              <div className="text-[#C5A25D] text-xs font-semibold uppercase tracking-wider flex items-center gap-1.5">
+              <div className="text-[#C5A25D] text-xs uppercase tracking-wider flex items-center gap-1.5">
                 <span>✦</span> Agrabad Showroom
               </div>
               <p className="text-xs text-[#FAF8F5]/70">Opposite RAK Ceramics</p>
             </div>
 
             <div className="space-y-1">
-              <div className="text-[#C5A25D] text-xs font-semibold uppercase tracking-wider flex items-center gap-1.5">
+              <div className="text-[#C5A25D] text-xs uppercase tracking-wider flex items-center gap-1.5">
                 <span>✦</span> Direct Delivery
               </div>
               <p className="text-xs text-[#FAF8F5]/70">Installation included</p>
@@ -129,3 +127,4 @@ export function Banner({
 }
 
 export default Banner;
+

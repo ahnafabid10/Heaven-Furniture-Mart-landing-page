@@ -7,7 +7,7 @@ export function Footer() {
   return (
     <footer className="w-full bg-[#0D1519] text-[#FAF8F5] relative overflow-hidden border-t border-white/10" id="contact">
       {/* Subtle ambient lighting */}
-      <div className="absolute top-0 left-1/3 w-[600px] h-[300px] bg-[#C5A25D]/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 left-1/3 w-[600px] h-[300px] bg-[#C5A25D]/5 rounded-lg blur-3xl pointer-events-none" />
 
       {/* Main Footer Content */}
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 pt-16 sm:pt-20 pb-12 relative z-10">
@@ -18,10 +18,10 @@ export function Footer() {
           {/* Column 1: Brand Info & Socials (5 cols) */}
           <div className="lg:col-span-4 space-y-5">
             <div>
-              <span className="text-[10px] font-bold tracking-[0.3em] text-[#C5A25D] uppercase block mb-1">
+              <span className="text-[10px] tracking-[0.3em] text-[#C5A25D] uppercase block mb-1">
                 STUDIO & CRAFTSMANSHIP
               </span>
-              <h3 className="font-serif text-2xl sm:text-[26px] font-bold tracking-tight text-white">
+              <h3 className="font-serif text-2xl sm:text-[26px] tracking-tight text-white">
                 HEAVEN FURNITURE MART
               </h3>
               <p className="text-xs text-[#C5A25D] tracking-widest uppercase font-medium mt-0.5">
@@ -41,7 +41,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
-                className="w-10 h-10 rounded-full border border-white/20 hover:border-[#C5A25D] text-white hover:text-[#C5A25D] flex items-center justify-center transition-all duration-200 hover:scale-105"
+                className="w-10 h-10 rounded-lg border border-white/20 hover:border-[#C5A25D] text-white hover:text-[#C5A25D] flex items-center justify-center transition-all duration-200 hover:scale-105"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.52-.14-2.71-.14-2.73 0-4.79 1.66-4.79 4.8v2.7H7v4h3V22h4v-8.5z" />
@@ -54,7 +54,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="w-10 h-10 rounded-full border border-white/20 hover:border-[#C5A25D] text-white hover:text-[#C5A25D] flex items-center justify-center transition-all duration-200 hover:scale-105"
+                className="w-10 h-10 rounded-lg border border-white/20 hover:border-[#C5A25D] text-white hover:text-[#C5A25D] flex items-center justify-center transition-all duration-200 hover:scale-105"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
@@ -69,7 +69,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube"
-                className="w-10 h-10 rounded-full border border-white/20 hover:border-[#C5A25D] text-white hover:text-[#C5A25D] flex items-center justify-center transition-all duration-200 hover:scale-105"
+                className="w-10 h-10 rounded-lg border border-white/20 hover:border-[#C5A25D] text-white hover:text-[#C5A25D] flex items-center justify-center transition-all duration-200 hover:scale-105"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
@@ -82,7 +82,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
-                className="w-10 h-10 rounded-full border border-white/20 hover:border-[#25D366] text-white hover:text-[#25D366] flex items-center justify-center transition-all duration-200 hover:scale-105"
+                className="w-10 h-10 rounded-lg border border-white/20 hover:border-[#25D366] text-white hover:text-[#25D366] flex items-center justify-center transition-all duration-200 hover:scale-105"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.63C8.75 21.41 10.37 21.82 12.04 21.82C17.5 21.82 21.95 17.37 21.95 11.91C21.95 6.45 17.5 2 12.04 2ZM12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.82L4.43 19.64L5.27 16.6L5.07 16.29C4.24 14.97 3.8 13.46 3.8 11.91C3.8 7.37 7.5 3.67 12.04 3.67C16.58 3.67 20.28 7.37 20.28 11.91C20.28 16.45 16.58 20.15 12.04 20.15ZM16.56 14.39C16.31 14.26 15.08 13.66 14.85 13.57C14.62 13.49 14.45 13.45 14.28 13.7C14.11 13.95 13.63 14.52 13.48 14.69C13.33 14.86 13.19 14.88 12.94 14.75C12.69 14.63 11.88 14.36 10.93 13.51C10.19 12.85 9.69 12.03 9.54 11.78C9.39 11.53 9.53 11.4 9.65 11.27C9.77 11.16 9.91 10.98 10.03 10.83C10.16 10.68 10.2 10.58 10.29 10.41C10.37 10.24 10.33 10.1 10.27 9.97C10.2 9.85 9.7 8.62 9.49 8.12C9.29 7.63 9.08 7.7 8.93 7.69L8.45 7.68C8.28 7.68 8.01 7.74 7.78 7.99C7.55 8.24 6.9 8.85 6.9 10.08C6.9 11.31 7.8 12.49 7.92 12.66C8.05 12.83 9.68 15.34 12.18 16.42C12.77 16.68 13.24 16.83 13.6 16.95C14.2 17.14 14.74 17.11 15.17 17.05C15.65 16.98 16.65 16.45 16.85 15.86C17.06 15.28 17.06 14.78 17 14.69C16.94 14.59 16.81 14.52 16.56 14.39Z" />
@@ -93,7 +93,7 @@ export function Footer() {
 
           {/* Column 2: Collections (2.5 cols) */}
           <div className="lg:col-span-2 space-y-4">
-            <h4 className="text-xs font-bold tracking-[0.2em] text-[#C5A25D] uppercase">
+            <h4 className="text-xs tracking-[0.2em] text-[#C5A25D] uppercase">
               Collections
             </h4>
             <ul className="space-y-2.5 text-sm text-[#FAF8F5]/75 font-light">
@@ -132,7 +132,7 @@ export function Footer() {
 
           {/* Column 3: Client Services (2.5 cols) */}
           <div className="lg:col-span-2 space-y-4">
-            <h4 className="text-xs font-bold tracking-[0.2em] text-[#C5A25D] uppercase">
+            <h4 className="text-xs tracking-[0.2em] text-[#C5A25D] uppercase">
               Client Services
             </h4>
             <ul className="space-y-2.5 text-sm text-[#FAF8F5]/75 font-light">
@@ -171,7 +171,7 @@ export function Footer() {
 
           {/* Column 4: Flagship Showroom & Contact (3 cols) */}
           <div className="lg:col-span-4 space-y-4">
-            <h4 className="text-xs font-bold tracking-[0.2em] text-[#C5A25D] uppercase">
+            <h4 className="text-xs tracking-[0.2em] text-[#C5A25D] uppercase">
               Flagship Showroom
             </h4>
 
@@ -214,9 +214,9 @@ export function Footer() {
                 href="https://chat.whatsapp.com/FTk1VXPtsG8J3yJSiTHmZy?mode=gi_t"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#25D366]/15 border border-[#25D366]/40 text-[#25D366] hover:bg-[#25D366]/25 text-xs font-semibold tracking-wider transition-all select-none"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#25D366]/15 border border-[#25D366]/40 text-[#25D366] hover:bg-[#25D366]/25 text-xs tracking-wider transition-all select-none"
               >
-                <span className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse" />
+                <span className="w-2 h-2 rounded-lg bg-[#25D366] animate-pulse" />
                 <span>Chat with Senior Stylist on WhatsApp</span>
               </Link>
             </div>
@@ -242,3 +242,4 @@ export function Footer() {
 }
 
 export default Footer;
+

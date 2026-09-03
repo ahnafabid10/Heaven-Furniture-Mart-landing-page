@@ -264,7 +264,7 @@ export function Navbar({
   const activeCategoryData = HEAVEN_CATEGORIES.find((c) => c.name === activeDropdown);
 
   return (
-    <header className="w-full bg-[#FAF8F5] text-[#2B1E16] border-b border-[#2B1E16]/10 sticky top-0 z-50 shadow-[0_2px_15px_rgba(19,32,38,0.04)] font-sans">
+    <header className="w-full bg-[#FAF8F5] text-[#2B1E16] border-b border-[#2B1E16]/10 sticky top-0 z-50 font-sans">
       
       {/* TOP / MAIN BAR */}
       <div className="w-full max-w-[1560px] mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-3.5">
@@ -293,13 +293,13 @@ export function Navbar({
                 onFocus={() => setIsSearchFocused(true)}
                 placeholder="Search bespoke sofas, beds, dining..."
                 aria-label="Search bespoke furniture"
-                className="w-full h-9 sm:h-10 pl-9 sm:pl-10 pr-4 text-[13px] sm:text-[13.5px] text-[#2B1E16] bg-white placeholder-[#8C6239]/60 border border-[#2B1E16]/30 rounded-[3px] focus:outline-none focus:border-[#C5A25D] focus:ring-1 focus:ring-[#C5A25D] transition-all shadow-[inset_0_1px_2px_rgba(0,0,0,0.02)]"
+                className="w-full h-9 sm:h-10 pl-9 sm:pl-10 pr-4 text-[13px] sm:text-[13.5px] text-[#2B1E16] bg-white placeholder-[#8C6239]/60 border border-[#2B1E16]/30 rounded-lg focus:outline-none focus:border-[#C5A25D] focus:ring-1 focus:ring-[#C5A25D] transition-all"
               />
               {searchQuery && (
                 <button
                   type="button"
                   onClick={() => setSearchQuery("")}
-                  className="absolute right-3 text-neutral-400 hover:text-neutral-700 text-xs font-semibold p-1"
+                  className="absolute right-3 text-neutral-400 hover:text-neutral-700 text-xs p-1"
                   aria-label="Clear search"
                 >
                   ✕
@@ -309,8 +309,8 @@ export function Navbar({
 
             {/* Quick Search Suggestions Dropdown */}
             {isSearchFocused && (
-              <div className="absolute left-0 right-0 top-full mt-1.5 bg-[#FAF8F5] border border-[#2B1E16]/15 rounded-md shadow-xl py-3 px-4 z-50">
-                <div className="text-[11px] font-semibold tracking-wider uppercase text-[#8C6239] mb-2">
+              <div className="absolute left-0 right-0 top-full mt-1.5 bg-[#FAF8F5] border border-[#2B1E16]/15 rounded-lg py-3 px-4 z-50">
+                <div className="text-[11px] tracking-wider uppercase text-[#8C6239] mb-2">
                   Popular Bespoke Searches
                 </div>
                 <div className="flex flex-col gap-1.5">
@@ -322,7 +322,7 @@ export function Navbar({
                         setSearchQuery(item);
                         setIsSearchFocused(false);
                       }}
-                      className="flex items-center gap-2.5 py-1.5 px-2 rounded hover:bg-[#C5A25D]/10 text-left text-[13px] text-[#2B1E16] transition-colors"
+                      className="flex items-center gap-2.5 py-1.5 px-2 rounded-lg hover:bg-[#C5A25D]/10 text-left text-[13px] text-[#2B1E16] transition-colors"
                     >
                       <svg
                         className="w-3.5 h-3.5 text-[#C5A25D]"
@@ -346,7 +346,7 @@ export function Navbar({
           <div className="flex items-center justify-center shrink-0">
             <Link
               href="/"
-              className="flex items-center gap-2.5 group focus:outline-none rounded-sm py-1 px-2"
+              className="flex items-center gap-2.5 group focus:outline-none rounded-lg py-1 px-2"
               aria-label="Heaven Furniture Mart Home"
             >
               {/* Muted Gold Crest / House Logo Icon */}
@@ -370,10 +370,10 @@ export function Navbar({
 
               {/* Brand Typography */}
               <div className="flex flex-col text-left">
-                <span className="text-[20px] sm:text-[24px] font-serif font-black tracking-[0.08em] text-[#132026] leading-none select-none">
+                <span className="text-[20px] sm:text-[24px] font-serif tracking-[0.08em] text-[#132026] leading-none select-none">
                   {brandName}
                 </span>
-                <span className="text-[9px] sm:text-[10px] tracking-[0.28em] font-bold text-[#C5A25D] uppercase leading-tight select-none mt-0.5">
+                <span className="text-[9px] sm:text-[10px] tracking-[0.28em] text-[#C5A25D] uppercase leading-tight select-none mt-0.5">
                   {brandTagline}
                 </span>
               </div>
@@ -413,7 +413,7 @@ export function Navbar({
               </Link>
               <Link
                 href="#consultation"
-                className="text-xs uppercase font-bold tracking-wider px-3 py-1.5 rounded bg-[#C5A25D]/15 text-[#8C6239] border border-[#C5A25D]/30 hover:bg-[#C5A25D] hover:text-[#132026] transition-all"
+                className="text-xs uppercase tracking-wider px-3 py-1.5 rounded-lg bg-[#C5A25D]/15 text-[#8C6239] border border-[#C5A25D]/30 hover:bg-[#C5A25D] hover:text-[#132026] transition-all"
               >
                 Free Consultation
               </Link>
@@ -441,7 +441,7 @@ export function Navbar({
               </svg>
 
               {cartCount > 0 && (
-                <span className="absolute -top-1 -right-1 bg-[#C5A25D] text-[#132026] text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center leading-none">
+                <span className="absolute -top-1 -right-1 bg-[#C5A25D] text-[#132026] text-[10px] h-4 w-4 rounded-lg flex items-center justify-center leading-none">
                   {cartCount}
                 </span>
               )}
@@ -526,7 +526,7 @@ export function Navbar({
         {/* MEGA-MENU DROPDOWN */}
         {activeDropdown && activeCategoryData?.subcategories && (
           <div
-            className="hidden md:block absolute left-0 right-0 w-full bg-[#FAF8F5] border-b border-[#2B1E16]/15 shadow-2xl z-40 transition-all duration-200"
+            className="hidden md:block absolute left-0 right-0 w-full bg-[#FAF8F5] border-b border-[#2B1E16]/15 z-40 transition-all duration-200"
             onMouseEnter={() => handleMouseEnterCategory(activeDropdown)}
             onMouseLeave={handleMouseLeaveCategory}
           >
@@ -537,7 +537,7 @@ export function Navbar({
                 <div className="col-span-8 lg:col-span-9 grid grid-cols-2 lg:grid-cols-3 gap-6">
                   {activeCategoryData.subcategories.map((sub, idx) => (
                     <div key={idx} className="space-y-3">
-                      <h4 className="text-[12px] font-bold uppercase tracking-wider text-[#132026] border-b border-[#2B1E16]/10 pb-2 flex items-center gap-1.5">
+                      <h4 className="text-[12px] uppercase tracking-wider text-[#132026] border-b border-[#2B1E16]/10 pb-2 flex items-center gap-1.5">
                         <span className="text-[#C5A25D]">✦</span>
                         <span>{sub.title}</span>
                       </h4>
@@ -558,12 +558,12 @@ export function Navbar({
                 </div>
 
                 {/* Featured Promo Card in Mega Menu */}
-                <div className="col-span-4 lg:col-span-3 bg-white rounded-lg p-5 border border-[#2B1E16]/10 shadow-sm flex flex-col justify-between">
+                <div className="col-span-4 lg:col-span-3 bg-white rounded-lg p-5 border border-[#2B1E16]/10 flex flex-col justify-between">
                   <div>
-                    <span className="text-[10px] uppercase font-bold tracking-widest text-[#C5A25D]">
+                    <span className="text-[10px] uppercase tracking-widest text-[#C5A25D]">
                       Bespoke Craftsmanship
                     </span>
-                    <h5 className="text-[15px] font-bold text-[#132026] mt-1 mb-2 font-serif">
+                    <h5 className="text-[15px] text-[#132026] mt-1 mb-2 font-serif">
                       {activeCategoryData.featured?.title || activeCategoryData.name}
                     </h5>
                     <p className="text-[12.5px] text-[#2B1E16]/75 leading-relaxed">
@@ -574,7 +574,7 @@ export function Navbar({
                   <div className="mt-4 pt-3 border-t border-[#2B1E16]/10 flex items-center justify-between">
                     <Link
                       href={activeCategoryData.href}
-                      className="text-[12.5px] font-semibold text-[#132026] hover:text-[#C5A25D] flex items-center gap-1.5 transition-colors"
+                      className="text-[12.5px] text-[#132026] hover:text-[#C5A25D] flex items-center gap-1.5 transition-colors"
                     >
                       <span>Explore Collection</span>
                       <span>→</span>
@@ -590,19 +590,19 @@ export function Navbar({
 
       {/* MOBILE DRAWER */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-[#2B1E16]/15 bg-[#FAF8F5] px-4 py-4 space-y-4 max-h-[80vh] overflow-y-auto shadow-xl">
+        <div className="md:hidden border-t border-[#2B1E16]/15 bg-[#FAF8F5] px-4 py-4 space-y-4 max-h-[80vh] overflow-y-auto">
           {/* Mobile Utility Links */}
           <div className="grid grid-cols-2 gap-2 pb-3 border-b border-[#2B1E16]/10 text-[13px] font-medium text-[#2B1E16]">
             <Link href="#showroom" className="py-1.5 hover:text-[#C5A25D]">Showroom</Link>
             <Link href="#bespoke" className="py-1.5 hover:text-[#C5A25D]">Bespoke Studio</Link>
             <Link href="tel:+8801960481983" className="py-1.5 hover:text-[#C5A25D]">Call Showroom</Link>
             <Link href="https://chat.whatsapp.com/FTk1VXPtsG8J3yJSiTHmZy?mode=gi_t" className="py-1.5 hover:text-[#C5A25D]">WhatsApp Us</Link>
-            <Link href="#consultation" className="py-1.5 col-span-2 text-[#C5A25D] font-bold">Free Design Consultation →</Link>
+            <Link href="#consultation" className="py-1.5 col-span-2 text-[#C5A25D]">Free Design Consultation →</Link>
           </div>
 
           {/* Mobile Categories Accordion */}
           <div className="space-y-1">
-            <div className="text-[11px] font-bold uppercase tracking-wider text-[#8C6239] mb-2">
+            <div className="text-[11px] uppercase tracking-wider text-[#8C6239] mb-2">
               Collections & Categories
             </div>
             {HEAVEN_CATEGORIES.map((cat) => {
@@ -613,10 +613,10 @@ export function Navbar({
                     <Link
                       href={cat.href}
                       onClick={() => setMobileMenuOpen(false)}
-                      className="flex items-center gap-2 text-[13px] font-semibold tracking-wide text-[#2B1E16] py-1.5"
+                      className="flex items-center gap-2 text-[13px] tracking-wide text-[#2B1E16] py-1.5"
                     >
                       {cat.specialIcon === "luxe" && (
-                        <span className="font-serif italic font-bold text-xs text-[#C5A25D]">HF</span>
+                        <span className="font-serif italic text-xs text-[#C5A25D]">HF</span>
                       )}
                       <span>{cat.name}</span>
                     </Link>
@@ -635,10 +635,10 @@ export function Navbar({
 
                   {/* Subcategories dropdown in mobile */}
                   {isOpen && cat.subcategories && (
-                    <div className="pl-4 py-2 space-y-3 bg-white/70 rounded mt-1 border border-[#2B1E16]/5">
+                    <div className="pl-4 py-2 space-y-3 bg-white/70 rounded-lg mt-1 border border-[#2B1E16]/5">
                       {cat.subcategories.map((sub, sIdx) => (
                         <div key={sIdx}>
-                          <p className="text-[11px] font-bold uppercase text-[#8C6239] tracking-wider">
+                          <p className="text-[11px] uppercase text-[#8C6239] tracking-wider">
                             {sub.title}
                           </p>
                           <div className="mt-1 space-y-1">
@@ -668,3 +668,4 @@ export function Navbar({
 }
 
 export default Navbar;
+
