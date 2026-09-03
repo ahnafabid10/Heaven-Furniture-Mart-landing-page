@@ -133,16 +133,18 @@ export function WhyChooseUs() {
               </div>
             </div>
 
-            {/* Bottom CTA Button - matching reference green pill button */}
+            {/* Bottom CTA Button - brand gold */}
             <div className="relative z-10 pt-8 mt-auto">
               <Link
                 href="https://chat.whatsapp.com/FTk1VXPtsG8J3yJSiTHmZy?mode=gi_t"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-lg bg-[#25D366] hover:bg-[#20be5b] text-[#132026] text-sm tracking-wide transition-all duration-200 hover:scale-[1.02]"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-lg bg-[#C5A25D] hover:bg-[#b8944f] text-[#132026] text-sm tracking-wide transition-all duration-200 hover:scale-[1.02]"
               >
                 <span>Book Free Consultation</span>
-                <span>→</span>
+                <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
               </Link>
             </div>
 

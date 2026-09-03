@@ -298,7 +298,7 @@ export function Milestones() {
               }`}
             >
               {/* Floating Icon */}
-              <div className="absolute -top-7 left-6 sm:left-8 z-20 w-14 h-14 rounded-lg bg-gradient-to-tr from-emerald-400 to-teal-300 border-4 border-white flex items-center justify-center text-[#132026]">
+              <div className="absolute -top-7 left-6 sm:left-8 z-20 w-14 h-14 rounded-lg bg-gradient-to-tr from-amber-400 to-amber-300 border-4 border-white flex items-center justify-center text-[#132026]">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                 </svg>
@@ -338,7 +338,13 @@ export function Milestones() {
               </div>
 
               <div className="inline-flex items-center gap-2 px-4 py-1 rounded-lg bg-[#C5A25D]/20 border border-[#C5A25D]/50 text-[#8C6239] text-xs tracking-wider uppercase mb-3">
-                <span className="text-sm">🏆</span>
+                <svg className="w-3.5 h-3.5 text-[#8C6239]" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                  <path d="M4 22h16" />
+                  <path d="M10 14.66V17c0 .55-.45 1-1 1H8c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1h8c.55 0 1-.45 1-1v-1c0-.55-.45-1-1-1h-1c-.55 0-1-.45-1-1v-2.34" />
+                  <path d="M18 2H6v7a6 6 0 0 0 12 0V2z" />
+                </svg>
                 <span>2026 · 1ST PRIZE AWARD</span>
               </div>
               <h3 className="font-serif text-2xl sm:text-3xl text-[#132026] mb-3">

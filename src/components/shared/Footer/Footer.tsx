@@ -82,7 +82,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
-                className="w-10 h-10 rounded-lg border border-white/20 hover:border-[#25D366] text-white hover:text-[#25D366] flex items-center justify-center transition-all duration-200 hover:scale-105"
+                className="w-10 h-10 rounded-lg border border-white/20 hover:border-[#C5A25D] text-white hover:text-[#C5A25D] flex items-center justify-center transition-all duration-200 hover:scale-105"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.63C8.75 21.41 10.37 21.82 12.04 21.82C17.5 21.82 21.95 17.37 21.95 11.91C21.95 6.45 17.5 2 12.04 2ZM12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.82L4.43 19.64L5.27 16.6L5.07 16.29C4.24 14.97 3.8 13.46 3.8 11.91C3.8 7.37 7.5 3.67 12.04 3.67C16.58 3.67 20.28 7.37 20.28 11.91C20.28 16.45 16.58 20.15 12.04 20.15ZM16.56 14.39C16.31 14.26 15.08 13.66 14.85 13.57C14.62 13.49 14.45 13.45 14.28 13.7C14.11 13.95 13.63 14.52 13.48 14.69C13.33 14.86 13.19 14.88 12.94 14.75C12.69 14.63 11.88 14.36 10.93 13.51C10.19 12.85 9.69 12.03 9.54 11.78C9.39 11.53 9.53 11.4 9.65 11.27C9.77 11.16 9.91 10.98 10.03 10.83C10.16 10.68 10.2 10.58 10.29 10.41C10.37 10.24 10.33 10.1 10.27 9.97C10.2 9.85 9.7 8.62 9.49 8.12C9.29 7.63 9.08 7.7 8.93 7.69L8.45 7.68C8.28 7.68 8.01 7.74 7.78 7.99C7.55 8.24 6.9 8.85 6.9 10.08C6.9 11.31 7.8 12.49 7.92 12.66C8.05 12.83 9.68 15.34 12.18 16.42C12.77 16.68 13.24 16.83 13.6 16.95C14.2 17.14 14.74 17.11 15.17 17.05C15.65 16.98 16.65 16.45 16.85 15.86C17.06 15.28 17.06 14.78 17 14.69C16.94 14.59 16.81 14.52 16.56 14.39Z" />
@@ -93,97 +93,86 @@ export function Footer() {
 
           {/* Column 2: Collections (2.5 cols) */}
           <div className="lg:col-span-2 space-y-4">
-            <h4 className="text-xs tracking-[0.2em] text-[#C5A25D] uppercase">
+            <h4 className="text-xs uppercase tracking-[0.18em] text-[#C5A25D]">
               Collections
             </h4>
-            <ul className="space-y-2.5 text-sm text-[#FAF8F5]/75 font-light">
+            <ul className="space-y-2.5 text-xs sm:text-[13px] text-[#FAF8F5]/70">
               <li>
-                <Link href="/#living-room" className="hover:text-white hover:translate-x-1 transition-all inline-block">
-                  Living Room Suites
-                </Link>
+                <Link href="#living-room" className="hover:text-white transition-colors">Living Room</Link>
               </li>
               <li>
-                <Link href="/#bedroom" className="hover:text-white hover:translate-x-1 transition-all inline-block">
-                  Master Bedroom Suites
-                </Link>
+                <Link href="#bedroom" className="hover:text-white transition-colors">Bedroom Suites</Link>
               </li>
               <li>
-                <Link href="/#dining" className="hover:text-white hover:translate-x-1 transition-all inline-block">
-                  Royal Dining Suites
-                </Link>
+                <Link href="#dining" className="hover:text-white transition-colors">Dining & Entertaining</Link>
               </li>
               <li>
-                <Link href="/#office" className="hover:text-white hover:translate-x-1 transition-all inline-block">
-                  Executive Office Desks
-                </Link>
+                <Link href="#office" className="hover:text-white transition-colors">Office & Study</Link>
               </li>
               <li>
-                <Link href="/#accent" className="hover:text-white hover:translate-x-1 transition-all inline-block">
-                  Accent & Recliners
-                </Link>
+                <Link href="#accent-chairs" className="hover:text-white transition-colors">Accent & Recliners</Link>
               </li>
               <li>
-                <Link href="/#bespoke" className="hover:text-white hover:translate-x-1 transition-all inline-block">
-                  Custom Woodwork
-                </Link>
+                <Link href="#bespoke" className="hover:text-white transition-colors">Custom Woodwork</Link>
               </li>
             </ul>
           </div>
 
-          {/* Column 3: Client Services (2.5 cols) */}
+          {/* Column 3: Client Services & Brand (2.5 cols) */}
           <div className="lg:col-span-2 space-y-4">
-            <h4 className="text-xs tracking-[0.2em] text-[#C5A25D] uppercase">
+            <h4 className="text-xs uppercase tracking-[0.18em] text-[#C5A25D]">
               Client Services
             </h4>
-            <ul className="space-y-2.5 text-sm text-[#FAF8F5]/75 font-light">
+            <ul className="space-y-2.5 text-xs sm:text-[13px] text-[#FAF8F5]/70">
               <li>
-                <Link href="/#why-choose-us" className="hover:text-white hover:translate-x-1 transition-all inline-block">
-                  Free Design Consultation
-                </Link>
+                <Link href="#consultation" className="hover:text-white transition-colors">Free Design Consultation</Link>
               </li>
               <li>
-                <Link href="/#quote" className="hover:text-white hover:translate-x-1 transition-all inline-block">
-                  Request a Quote
-                </Link>
+                <Link href="#quote" className="hover:text-white transition-colors">Request a Quote</Link>
               </li>
               <li>
-                <Link href="/#milestones" className="hover:text-white hover:translate-x-1 transition-all inline-block">
-                  Proof & Milestones
-                </Link>
+                <Link href="#milestones" className="hover:text-white transition-colors">Proof & Milestones</Link>
               </li>
               <li>
-                <Link href="/#testimonials" className="hover:text-white hover:translate-x-1 transition-all inline-block">
-                  Client Reviews
-                </Link>
+                <Link href="#reviews" className="hover:text-white transition-colors">Client Reviews</Link>
               </li>
               <li>
-                <Link href="/#faq" className="hover:text-white hover:translate-x-1 transition-all inline-block">
-                  Frequently Asked Questions
-                </Link>
+                <Link href="#faq" className="hover:text-white transition-colors">Frequently Asked Questions</Link>
               </li>
               <li>
-                <Link href="/#about" className="hover:text-white hover:translate-x-1 transition-all inline-block">
-                  Our Story
-                </Link>
+                <Link href="#about" className="hover:text-white transition-colors">Our Story & Heritage</Link>
               </li>
             </ul>
           </div>
 
-          {/* Column 4: Flagship Showroom & Contact (3 cols) */}
+          {/* Column 4: Flagship Showroom & Hours (3.5 cols) */}
           <div className="lg:col-span-4 space-y-4">
-            <h4 className="text-xs tracking-[0.2em] text-[#C5A25D] uppercase">
+            <h4 className="text-xs uppercase tracking-[0.18em] text-[#C5A25D]">
               Flagship Showroom
             </h4>
-
-            <div className="space-y-3 text-sm text-[#FAF8F5]/75 font-light">
+            
+            <div className="space-y-3.5 text-xs sm:text-[13px] text-[#FAF8F5]/75">
               <div className="flex items-start gap-3">
                 <svg className="w-5 h-5 text-[#C5A25D] shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                   <circle cx="12" cy="10" r="3" />
                 </svg>
-                <p className="leading-relaxed">
-                  Agrabad Access Road (opposite RAK Ceramics), Chattogram, Bangladesh
-                </p>
+                <div>
+                  <p className="leading-relaxed">
+                    Agrabad Access Road (opposite RAK Ceramics), Chattogram, Bangladesh
+                  </p>
+                  <a
+                    href="https://maps.app.goo.gl/xxGh9jYiQ2PKpQR99"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-xs text-[#C5A25D] hover:underline mt-1"
+                  >
+                    <span>View on Google Maps</span>
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                  </a>
+                </div>
               </div>
 
               <div className="flex items-center gap-3">
@@ -214,9 +203,9 @@ export function Footer() {
                 href="https://chat.whatsapp.com/FTk1VXPtsG8J3yJSiTHmZy?mode=gi_t"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#25D366]/15 border border-[#25D366]/40 text-[#25D366] hover:bg-[#25D366]/25 text-xs tracking-wider transition-all select-none"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#C5A25D]/15 border border-[#C5A25D]/40 text-[#C5A25D] hover:bg-[#C5A25D]/25 text-xs tracking-wider transition-all select-none"
               >
-                <span className="w-2 h-2 rounded-lg bg-[#25D366] animate-pulse" />
+                <span className="w-2 h-2 rounded-lg bg-[#C5A25D] animate-pulse" />
                 <span>Chat with Senior Stylist on WhatsApp</span>
               </Link>
             </div>

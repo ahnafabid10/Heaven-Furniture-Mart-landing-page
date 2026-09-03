@@ -87,9 +87,6 @@ export function CategoryGrid() {
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
-          <p className="text-[11px] sm:text-xs uppercase tracking-[0.25em] text-[#C5A25D] mb-2.5">
-            Curated Collections · Heaven Furniture Mart
-          </p>
           <h2 className="font-serif text-2xl sm:text-4xl lg:text-[42px] text-[#132026] tracking-tight">
             Explore By Category
           </h2>

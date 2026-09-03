@@ -538,7 +538,9 @@ export function Navbar({
                   {activeCategoryData.subcategories.map((sub, idx) => (
                     <div key={idx} className="space-y-3">
                       <h4 className="text-[12px] uppercase tracking-wider text-[#132026] border-b border-[#2B1E16]/10 pb-2 flex items-center gap-1.5">
-                        <span className="text-[#C5A25D]">✦</span>
+                        <svg className="w-3 h-3 text-[#C5A25D]" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2l2.4 7.2h7.6l-6.1 4.5 2.3 7.3-6.2-4.6-6.2 4.6 2.3-7.3-6.1-4.5h7.6z" />
+                        </svg>
                         <span>{sub.title}</span>
                       </h4>
                       <ul className="space-y-2">
@@ -577,7 +579,9 @@ export function Navbar({
                       className="text-[12.5px] text-[#132026] hover:text-[#C5A25D] flex items-center gap-1.5 transition-colors"
                     >
                       <span>Explore Collection</span>
-                      <span>→</span>
+                      <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                      </svg>
                     </Link>
                   </div>
                 </div>
@@ -597,7 +601,12 @@ export function Navbar({
             <Link href="#bespoke" className="py-1.5 hover:text-[#C5A25D]">Bespoke Studio</Link>
             <Link href="tel:+8801960481983" className="py-1.5 hover:text-[#C5A25D]">Call Showroom</Link>
             <Link href="https://chat.whatsapp.com/FTk1VXPtsG8J3yJSiTHmZy?mode=gi_t" className="py-1.5 hover:text-[#C5A25D]">WhatsApp Us</Link>
-            <Link href="#consultation" className="py-1.5 col-span-2 text-[#C5A25D]">Free Design Consultation →</Link>
+            <Link href="#consultation" className="py-1.5 col-span-2 text-[#C5A25D] flex items-center gap-1">
+              <span>Free Design Consultation</span>
+              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </Link>
           </div>
 
           {/* Mobile Categories Accordion */}

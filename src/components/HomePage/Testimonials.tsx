@@ -64,15 +64,11 @@ export function Testimonials() {
   const current = TESTIMONIALS[currentIndex];
 
   return (
-    <section className="w-full bg-[#11191E] text-white py-20 sm:py-24 lg:py-28 relative overflow-hidden border-b border-[#2B1E16]/25" id="testimonials">
-      {/* Subtle ambient lighting */}
-      <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#C5A25D]/10 rounded-lg blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-10 w-96 h-96 bg-[#182830] rounded-lg blur-3xl pointer-events-none" />
-
+    <section className="w-full bg-[#FAF8F5] text-[#2B1E16] py-20 sm:py-24 lg:py-28 relative overflow-hidden border-b border-[#2B1E16]/10" id="testimonials">
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
-          {/* LEFT SIDE: Heading with Hollow Outline typography matching reference */}
+          {/* LEFT SIDE: Heading with Hollow Outline typography */}
           <div className="lg:col-span-5 space-y-6">
             {/* Eyebrow */}
             <div className="text-xs tracking-[0.25em] uppercase text-[#C5A25D]">
@@ -80,12 +76,12 @@ export function Testimonials() {
             </div>
 
             {/* 3-Line Display Headline: "Client" / "Success" (outline) / "Stories" */}
-            <h2 className="text-4xl sm:text-5xl lg:text-[56px] tracking-tight text-white leading-[1.08]">
+            <h2 className="text-4xl sm:text-5xl lg:text-[56px] tracking-tight text-[#132026] leading-[1.08]">
               Client <br />
               <span
                 className="text-transparent inline-block my-0.5"
                 style={{
-                  WebkitTextStroke: "1.8px rgba(250, 248, 245, 0.95)",
+                  WebkitTextStroke: "1.8px #132026",
                 }}
               >
                 Success
@@ -94,12 +90,12 @@ export function Testimonials() {
             </h2>
 
             {/* Subtitle */}
-            <p className="text-sm sm:text-base text-[#FAF8F5]/70 font-light leading-relaxed max-w-md">
+            <p className="text-sm sm:text-base text-[#2B1E16]/75 leading-relaxed max-w-md">
               Hear from homeowners, interior designers, and families across Chattogram who entrusted Heaven Furniture Mart to craft their bespoke dream living spaces.
             </p>
           </div>
 
-          {/* RIGHT SIDE: Review Card matching reference */}
+          {/* RIGHT SIDE: Review Card */}
           <div className="lg:col-span-7 space-y-8 lg:pl-4">
             
             {/* Quote Mark Accent */}
@@ -111,17 +107,17 @@ export function Testimonials() {
 
             {/* Quote Content */}
             <div className="min-h-[140px] sm:min-h-[160px] flex items-center">
-              <p className="font-serif text-xl sm:text-2xl lg:text-[25px] font-light text-white leading-relaxed tracking-wide">
+              <p className="font-serif text-xl sm:text-2xl lg:text-[25px] font-light text-[#132026] leading-relaxed tracking-wide">
                 &ldquo;{current.quote}&rdquo;
               </p>
             </div>
 
             {/* Client Profile and Navigation Controls */}
-            <div className="pt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-6 border-t border-white/10">
+            <div className="pt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-6 border-t border-[#2B1E16]/10">
               
               {/* Profile */}
               <div className="flex items-center gap-4">
-                <div className="relative w-12 h-12 rounded-lg overflow-hidden border-2 border-[#C5A25D] shrink-0 bg-neutral-800">
+                <div className="relative w-12 h-12 rounded-lg overflow-hidden border-2 border-[#C5A25D] shrink-0 bg-neutral-200">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={current.avatar}
@@ -130,10 +126,10 @@ export function Testimonials() {
                   />
                 </div>
                 <div>
-                  <h4 className="text-base text-white leading-tight">
+                  <h4 className="text-base text-[#132026] leading-tight">
                     {current.name}
                   </h4>
-                  <p className="text-xs sm:text-[13px] text-[#FAF8F5]/65 mt-0.5">
+                  <p className="text-xs sm:text-[13px] text-[#2B1E16]/65 mt-0.5">
                     {current.role}
                   </p>
                 </div>
@@ -145,7 +141,7 @@ export function Testimonials() {
                   type="button"
                   onClick={prevSlide}
                   aria-label="Previous testimonial"
-                  className="w-10 h-10 rounded-lg border border-white/20 hover:border-[#C5A25D] text-white hover:text-[#C5A25D] flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer"
+                  className="w-10 h-10 rounded-lg border border-[#2B1E16]/20 hover:border-[#C5A25D] bg-white text-[#132026] hover:text-[#C5A25D] flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer"
                 >
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                     <polyline points="15 18 9 12 15 6" />
@@ -156,7 +152,7 @@ export function Testimonials() {
                   type="button"
                   onClick={nextSlide}
                   aria-label="Next testimonial"
-                  className="w-10 h-10 rounded-lg border border-white/20 hover:border-[#C5A25D] text-white hover:text-[#C5A25D] flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer"
+                  className="w-10 h-10 rounded-lg border border-[#2B1E16]/20 hover:border-[#C5A25D] bg-white text-[#132026] hover:text-[#C5A25D] flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer"
                 >
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                     <polyline points="9 18 15 12 9 6" />

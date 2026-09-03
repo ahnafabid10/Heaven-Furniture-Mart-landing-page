@@ -54,14 +54,6 @@ export function AboutUs() {
           
           {/* LEFT SIDE: About Us Title & Description */}
           <div className="lg:col-span-5 space-y-6 sm:space-y-7 text-left">
-            
-            {/* Eyebrow */}
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-[#C5A25D]/15 border border-[#C5A25D]/35">
-              <span className="w-2 h-2 rounded-lg bg-[#C5A25D]" />
-              <span className="text-[11px] sm:text-xs tracking-[0.2em] uppercase text-[#8C6239]">
-                ABOUT HEAVEN FURNITURE MART
-              </span>
-            </div>
 
             {/* Headline in Playfair Serif */}
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-[44px] text-[#132026] leading-[1.18] tracking-tight">
