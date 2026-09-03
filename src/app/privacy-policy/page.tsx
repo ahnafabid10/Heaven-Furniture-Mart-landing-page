@@ -92,7 +92,22 @@ export default function PrivacyPolicyPage() {
 
           <section className="space-y-3 bg-white p-6 sm:p-8 rounded-lg border border-[#2B1E16]/10">
             <h2 className="font-serif text-xl sm:text-2xl text-[#132026]">
-              5. Contact Us Regarding Your Data
+              5. Cookie Concern & Tracking Technologies
+            </h2>
+            <p>
+              Our website uses essential cookies, performance tracking, and local session preferences to enhance your browsing experience across our bespoke furniture collections:
+            </p>
+            <ul className="list-disc list-inside space-y-1.5 pl-2">
+              <li><strong>Essential Functional Cookies:</strong> Necessary for smooth navigation between collection galleries, interactive room sliders, and responsive menus.</li>
+              <li><strong>Preference Cookies:</strong> Remembers user actions such as viewing preferences, recent inquiries, and cookie consent choices so you don&apos;t have to re-select them on return visits.</li>
+              <li><strong>Performance & Analytics:</strong> Aggregates anonymous metrics to help us understand which furniture pieces and room suites resonate most with clients in Chattogram and nationwide.</li>
+              <li><strong>Managing Your Cookies:</strong> You can choose to accept or decline cookies via your browser settings or our on-site cookie consent prompt at any time without impacting your ability to browse our showroom works.</li>
+            </ul>
+          </section>
+
+          <section className="space-y-3 bg-white p-6 sm:p-8 rounded-lg border border-[#2B1E16]/10">
+            <h2 className="font-serif text-xl sm:text-2xl text-[#132026]">
+              6. Contact Us Regarding Your Data
             </h2>
             <p>
               If you have any questions about this Privacy Policy or wish to review, update, or remove your contact information from our studio records, please reach out to us:
