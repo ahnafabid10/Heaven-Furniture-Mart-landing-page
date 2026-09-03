@@ -119,11 +119,11 @@ export function AboutUs() {
 
               {/* WhatsApp */}
               <Link
-                href="https://chat.whatsapp.com/FTk1VXPtsG8J3yJSiTHmZy?mode=gi_t"
+                href="https://wa.me/8801960481983"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="WhatsApp Community"
-                aria-label="WhatsApp Community"
+                title="Direct WhatsApp"
+                aria-label="Direct WhatsApp"
                 className="w-10 h-10 sm:w-11 sm:h-11 rounded-lg border border-[#2B1E16]/30 hover:border-[#C5A25D] text-[#2B1E16] hover:text-[#C5A25D] flex items-center justify-center transition-all duration-200 hover:scale-105"
               >
                 <svg className="w-4 h-4 sm:w-[17px] sm:h-[17px]" fill="currentColor" viewBox="0 0 24 24">

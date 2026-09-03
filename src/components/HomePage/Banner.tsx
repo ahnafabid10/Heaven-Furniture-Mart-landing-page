@@ -17,7 +17,7 @@ export function Banner({
   headline = "Furniture, Crafted Around You.",
   subheadline = "At Heaven Furniture Mart, we don't build off the shelf. From hand-carved royal suites to contemporary modular living, every piece is sculpted to your space, aesthetic, and lifestyle.",
   primaryCtaText = "Book Free Design Consultation",
-  primaryCtaHref = "https://chat.whatsapp.com/FTk1VXPtsG8J3yJSiTHmZy?mode=gi_t",
+  primaryCtaHref = "https://wa.me/8801960481983",
   secondaryCtaText = "Explore Showroom Works",
   secondaryCtaHref = "#collections",
 }: BannerProps) {

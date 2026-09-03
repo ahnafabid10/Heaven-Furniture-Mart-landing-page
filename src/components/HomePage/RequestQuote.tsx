@@ -21,7 +21,7 @@ export function RequestQuote() {
         {/* WhatsApp Button */}
         <div>
           <Link
-            href="https://chat.whatsapp.com/FTk1VXPtsG8J3yJSiTHmZy?mode=gi_t"
+            href="https://wa.me/8801960481983"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2.5 px-8 sm:px-10 py-4 rounded-lg bg-[#9E7748] hover:bg-[#8B673A] text-white text-xs sm:text-sm tracking-[0.18em] uppercase transition-all duration-200 hover:-translate-y-0.5 select-none"

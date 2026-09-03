@@ -86,9 +86,6 @@ export function StoreLocation() {
                   <p className="text-sm text-[#132026] leading-relaxed">
                     Agrabad Access Road (Opposite RAK Ceramics), Chattogram, Bangladesh
                   </p>
-                  <p className="text-xs text-[#2B1E16]/65">
-                    Prime commercial access with convenient on-site parking.
-                  </p>
                 </div>
               </div>
 
@@ -108,9 +105,6 @@ export function StoreLocation() {
                     <p>Saturday – Thursday: 10:00 AM – 9:30 PM</p>
                     <p>Friday: 3:00 PM – 9:30 PM</p>
                   </div>
-                  <p className="text-xs text-[#2B1E16]/65">
-                    Walk-ins welcome every day of the week.
-                  </p>
                 </div>
               </div>
 
@@ -123,33 +117,16 @@ export function StoreLocation() {
                 </div>
                 <div className="space-y-1">
                   <h4 className="text-xs uppercase tracking-wider text-[#8C6239]">
-                    Direct Hotline
+                    WhatsApp & Hotline
                   </h4>
                   <a
-                    href="tel:+8801960481983"
+                    href="https://wa.me/8801960481983"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-sm text-[#132026] hover:text-[#C5A25D] transition-colors block font-medium"
                   >
                     +880 1960-481983
                   </a>
-                  <p className="text-xs text-[#2B1E16]/65">
-                    Direct line to Senior Stylist & Showroom Manager
-                  </p>
-                </div>
-              </div>
-
-              {/* In-Store Amenities Pill List */}
-              <div className="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                <div className="flex items-center gap-2 text-xs text-[#2B1E16]/80 bg-[#FAF8F5] px-3 py-2 rounded-lg border border-[#2B1E16]/10">
-                  <svg className="w-3.5 h-3.5 text-[#8C6239] shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                  </svg>
-                  <span>100+ Live Furniture Sets</span>
-                </div>
-                <div className="flex items-center gap-2 text-xs text-[#2B1E16]/80 bg-[#FAF8F5] px-3 py-2 rounded-lg border border-[#2B1E16]/10">
-                  <svg className="w-3.5 h-3.5 text-[#8C6239] shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                  </svg>
-                  <span>Timber & Fabric Swatches</span>
                 </div>
               </div>
 

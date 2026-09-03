@@ -160,7 +160,9 @@ export function Navbar({
           {/* RIGHT ACTION: Free Consultation CTA Button & Mobile Toggle */}
           <div className="flex items-center gap-3 sm:gap-4">
             <Link
-              href="/#quote"
+              href="https://wa.me/8801960481983"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hidden sm:inline-flex text-xs uppercase tracking-wider px-4 py-2 rounded-lg bg-[#C5A25D]/15 text-[#8C6239] border border-[#C5A25D]/30 hover:bg-[#C5A25D] hover:text-[#132026] transition-all font-medium"
             >
               Free Consultation
@@ -204,7 +206,9 @@ export function Navbar({
 
           <div className="pt-2">
             <Link
-              href="/#quote"
+              href="https://wa.me/8801960481983"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
               className="w-full inline-flex items-center justify-center text-xs uppercase tracking-wider px-4 py-2.5 rounded-lg bg-[#C5A25D] text-[#132026] font-medium transition-all"
             >

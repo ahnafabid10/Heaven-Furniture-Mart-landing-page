@@ -132,7 +132,7 @@ export default function ShowroomGuidelinesPage() {
               5. Direct Contact Before Your Visit
             </h2>
             <p>
-              Have a question before you head out? Call our showroom team directly at <a href="tel:+8801960481983" className="text-[#8C6239] font-medium hover:underline">+880 1960-481983</a> or send us a WhatsApp message anytime.
+              Have a question before you head out? Connect with our showroom team directly via WhatsApp at <a href="https://wa.me/8801960481983" target="_blank" rel="noopener noreferrer" className="text-[#8C6239] font-medium hover:underline">+880 1960-481983</a> anytime.
             </p>
           </section>
 

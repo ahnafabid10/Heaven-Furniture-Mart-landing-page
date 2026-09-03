@@ -102,8 +102,6 @@ export function CategoryGrid() {
               <Link
                 key={card.id}
                 href={card.href}
-                onMouseEnter={() => setActiveCard(card.id)}
-                onMouseLeave={() => setActiveCard(null)}
                 className="group relative aspect-[4/5] sm:aspect-[3/4] w-full overflow-hidden rounded-lg sm:rounded-lg bg-neutral-900 block cursor-pointer transition-all duration-300"
               >
                 {/* Product Image */}

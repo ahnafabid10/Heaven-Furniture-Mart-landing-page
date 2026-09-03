@@ -154,7 +154,7 @@ export function WhyChooseUs() {
             {/* Bottom CTA Button */}
             <div className="relative z-10 pt-8 mt-auto">
               <Link
-                href="https://chat.whatsapp.com/FTk1VXPtsG8J3yJSiTHmZy?mode=gi_t"
+                href="https://wa.me/8801960481983"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-[#C5A25D] hover:bg-[#b8944f] text-[#132026] text-xs uppercase tracking-wider transition-all duration-200 hover:-translate-y-0.5 select-none"

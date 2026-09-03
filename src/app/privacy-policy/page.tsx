@@ -100,7 +100,9 @@ export default function PrivacyPolicyPage() {
             <div className="pt-2 text-[#132026] font-medium space-y-1">
               <p>Heaven Furniture Mart</p>
               <p className="font-normal text-[#2B1E16]/75">Agrabad Access Road (opposite RAK Ceramics), Chattogram, Bangladesh</p>
-              <p className="font-normal text-[#2B1E16]/75">Phone: +880 1960-481983</p>
+              <p className="font-normal text-[#2B1E16]/75">
+                WhatsApp & Phone: <a href="https://wa.me/8801960481983" target="_blank" rel="noopener noreferrer" className="text-[#8C6239] hover:underline font-medium">+880 1960-481983</a>
+              </p>
             </div>
           </section>
 
