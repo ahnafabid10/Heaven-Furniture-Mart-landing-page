@@ -115,11 +115,11 @@ export function CategoryGrid() {
                   className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-108"
                 />
 
-                {/* Base Gradient Overlay (always visible so text is crisp) */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent transition-opacity duration-300" />
+                {/* Base Gradient Overlay (keeps text legible) */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent transition-opacity duration-300" />
 
-                {/* Hover Deep Darkish Overlay from the bottom (Niche theke darkish bhab ta ashe) */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#132026]/95 via-[#132026]/70 to-[#132026]/20 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out" />
+                {/* Hover Mild Darkish Overlay (Same as About Us) */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out" />
 
 
                 {/* Bottom Content Area */}

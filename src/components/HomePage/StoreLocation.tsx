@@ -36,13 +36,13 @@ export function StoreLocation() {
               priority
             />
             
-            {/* Hover Dark Overlay with Google Maps Icon */}
+            {/* Hover Dark Overlay with Google Maps Icon (Same mild darkish tone as About Us) */}
             <Link
               href={googleMapsUrl}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Open Heaven Furniture Mart in Google Maps"
-              className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-3 cursor-pointer z-10"
+              className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/25 to-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out flex flex-col items-center justify-center gap-3 cursor-pointer z-10"
             >
               <div className="w-14 h-14 rounded-lg bg-[#C5A25D] text-[#132026] flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">

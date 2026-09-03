@@ -154,20 +154,22 @@ export function AboutUs() {
                     }}
                     onMouseLeave={() => setIsPaused(false)}
                     onClick={() => setActiveIndex(index)}
-                    className={`relative h-full overflow-hidden rounded-lg sm:rounded-lg cursor-pointer transition-all duration-700 ease-in-out ${
+                    className={`group relative h-full overflow-hidden rounded-lg cursor-pointer transition-all duration-700 ease-in-out ${
                       isActive
-                        ? "flex-[4] sm:flex-[5] "
+                        ? "flex-[4] sm:flex-[5]"
                         : "flex-[1] opacity-85 hover:opacity-100"
                     }`}
                   >
-                    {/* Clean Image without any border, filter, or overlay */}
                     <Image
                       src={slide.src}
                       alt={slide.alt}
                       fill
                       sizes="(max-width: 1024px) 100vw, 50vw"
-                      className="object-cover object-center transition-all duration-700 ease-out"
+                      className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
                     />
+
+                    {/* Mild Darkish Hover Overlay (Category-style soft dark gradient from bottom) */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out pointer-events-none" />
                   </div>
                 );
               })}
