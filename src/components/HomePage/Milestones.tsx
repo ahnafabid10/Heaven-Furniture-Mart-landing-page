@@ -115,13 +115,13 @@ export function Milestones() {
     <section className="w-full bg-[#FAF8F5] py-16 sm:py-20 lg:py-28 border-b border-[#2B1E16]/10 relative overflow-hidden" id="milestones">
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
         
-        {/* Header Area */}
+        {/* Header Area (Centered) */}
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-12 sm:mb-16">
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-[44px] text-[#132026] leading-tight">
             Our Journey & <span className="text-[#8C6239]">Defining Milestones</span>
           </h2>
 
-          <p className="text-sm sm:text-base text-[#2B1E16]/75 max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base text-[#2B1E16]/75 max-w-2xl mx-auto leading-relaxed">
             From our founding in 2020 to nationwide recognition in 2026, explore how Heaven Furniture Mart became Chattogram’s premier bespoke furniture studio.
           </p>
         </div>
@@ -129,7 +129,7 @@ export function Milestones() {
         {/* Timeline / Milestones: True Zig-Zag Layout with Exact Connecting Dashed Lines */}
         <div ref={containerRef} className="relative max-w-5xl mx-auto">
           
-          {/* Continuous SVG Connecting Paths (No gaps, perfectly attached to cards, color changes on scroll) */}
+          {/* Continuous SVG Connecting Paths (Color changes on scroll from gray to gold) */}
           <svg className="absolute inset-0 w-full h-full pointer-events-none z-0 overflow-visible">
             {isDesktop ? (
               <>
@@ -200,27 +200,29 @@ export function Milestones() {
             )}
           </svg>
 
-          {/* STEP 1: 2020 (Left Card) */}
+          {/* STEP 1: 2020 (Left Card - Uniform Light Styling, No Black) */}
           <div className="relative z-10 mb-16 sm:mb-20">
             <div
               ref={card1Ref}
-              className="w-full md:w-[48%] relative rounded-lg pt-10 pb-7 px-6 sm:px-8 bg-gradient-to-br from-[#132026] via-[#1b2b33] to-[#101b20] text-white border border-[#132026] hover:-translate-y-1 transition-all duration-300"
+              className={`w-full md:w-[48%] relative rounded-lg pt-10 pb-7 px-6 sm:px-8 bg-white text-[#2B1E16] border hover:-translate-y-1 transition-all duration-500 ${
+                reachedStep >= 1 ? "border-[#C5A25D]/40" : "border-[#2B1E16]/10"
+              }`}
             >
               {/* Floating Icon overlapping top border */}
-              <div className="absolute -top-7 left-6 sm:left-8 z-20 w-14 h-14 rounded-lg bg-gradient-to-tr from-amber-400 to-amber-300 border-4 border-white flex items-center justify-center text-[#132026]">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <div className="absolute -top-7 left-6 sm:left-8 z-20 w-14 h-14 rounded-lg bg-[#FAF8F5] border-2 border-[#C5A25D] flex items-center justify-center text-[#8C6239]">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                   <circle cx="12" cy="12" r="10" />
                   <polyline points="12 6 12 12 16 14" />
                 </svg>
               </div>
 
-              <div className="inline-block px-3 py-1 rounded-lg bg-[#C5A25D]/25 border border-[#C5A25D]/50 text-[#C5A25D] text-xs tracking-wider uppercase mb-2">
+              <div className="inline-block px-3 py-1 rounded-lg bg-[#8C6239]/10 text-[#8C6239] text-xs tracking-wider uppercase mb-2">
                 2020 · FOUNDING
               </div>
-              <h3 className="font-serif text-xl sm:text-2xl text-white mb-2.5">
+              <h3 className="font-serif text-xl sm:text-2xl text-[#132026] mb-2.5">
                 Founded by Abul Kalam Bhuiyan
               </h3>
-              <p className="text-sm sm:text-[14px] text-[#FAF8F5]/80 font-light leading-relaxed">
+              <p className="text-sm sm:text-[14px] text-[#2B1E16]/75 leading-relaxed">
                 Heaven Furniture Mart began its journey in Chattogram under the visionary leadership of Managing Director Abul Kalam Bhuiyan, pioneering bespoke custom furniture tailored to individual client spaces.
               </p>
             </div>
@@ -230,13 +232,13 @@ export function Milestones() {
           <div className="relative z-10 mb-16 sm:mb-20 flex justify-end">
             <div
               ref={card2Ref}
-              className={`w-full md:w-[48%] relative rounded-lg pt-10 pb-7 px-6 sm:px-8 bg-white text-[#2B1E16]  border hover:-translate-y-1 transition-all duration-500 ${
-                reachedStep >= 2 ? "border-[#C5A25D]/40 " : "border-[#2B1E16]/10"
+              className={`w-full md:w-[48%] relative rounded-lg pt-10 pb-7 px-6 sm:px-8 bg-white text-[#2B1E16] border hover:-translate-y-1 transition-all duration-500 ${
+                reachedStep >= 2 ? "border-[#C5A25D]/40" : "border-[#2B1E16]/10"
               }`}
             >
               {/* Floating Icon overlapping top border */}
-              <div className="absolute -top-7 left-6 sm:left-8 z-20 w-14 h-14 rounded-lg bg-gradient-to-tr from-sky-400 to-sky-300 border-4 border-white flex items-center justify-center text-[#132026]">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <div className="absolute -top-7 left-6 sm:left-8 z-20 w-14 h-14 rounded-lg bg-[#FAF8F5] border-2 border-[#C5A25D] flex items-center justify-center text-[#8C6239]">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                   <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
                   <polyline points="9 22 9 12 15 12 15 22" />
                 </svg>
@@ -258,13 +260,13 @@ export function Milestones() {
           <div className="relative z-10 mb-16 sm:mb-20">
             <div
               ref={card3Ref}
-              className={`w-full md:w-[48%] relative rounded-lg pt-10 pb-7 px-6 sm:px-8 bg-white text-[#2B1E16]  border hover:-translate-y-1 transition-all duration-500 ${
-                reachedStep >= 3 ? "border-[#C5A25D]/40 " : "border-[#2B1E16]/10"
+              className={`w-full md:w-[48%] relative rounded-lg pt-10 pb-7 px-6 sm:px-8 bg-white text-[#2B1E16] border hover:-translate-y-1 transition-all duration-500 ${
+                reachedStep >= 3 ? "border-[#C5A25D]/40" : "border-[#2B1E16]/10"
               }`}
             >
               {/* Floating Icon */}
-              <div className="absolute -top-7 left-6 sm:left-8 z-20 w-14 h-14 rounded-lg bg-gradient-to-tr from-amber-400 to-amber-300 border-4 border-white flex items-center justify-center text-[#132026]">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <div className="absolute -top-7 left-6 sm:left-8 z-20 w-14 h-14 rounded-lg bg-[#FAF8F5] border-2 border-[#C5A25D] flex items-center justify-center text-[#8C6239]">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                   <circle cx="11" cy="11" r="8" />
                   <line x1="21" y1="21" x2="16.65" y2="16.65" />
                 </svg>
@@ -286,13 +288,13 @@ export function Milestones() {
           <div className="relative z-10 mb-16 sm:mb-20 flex justify-end">
             <div
               ref={card4Ref}
-              className={`w-full md:w-[48%] relative rounded-lg pt-10 pb-7 px-6 sm:px-8 bg-white text-[#2B1E16]  border hover:-translate-y-1 transition-all duration-500 ${
-                reachedStep >= 4 ? "border-[#C5A25D]/40 " : "border-[#2B1E16]/10"
+              className={`w-full md:w-[48%] relative rounded-lg pt-10 pb-7 px-6 sm:px-8 bg-white text-[#2B1E16] border hover:-translate-y-1 transition-all duration-500 ${
+                reachedStep >= 4 ? "border-[#C5A25D]/40" : "border-[#2B1E16]/10"
               }`}
             >
               {/* Floating Icon */}
-              <div className="absolute -top-7 left-6 sm:left-8 z-20 w-14 h-14 rounded-lg bg-gradient-to-tr from-amber-400 to-amber-300 border-4 border-white flex items-center justify-center text-[#132026]">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <div className="absolute -top-7 left-6 sm:left-8 z-20 w-14 h-14 rounded-lg bg-[#FAF8F5] border-2 border-[#C5A25D] flex items-center justify-center text-[#8C6239]">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                 </svg>
               </div>
@@ -313,15 +315,15 @@ export function Milestones() {
           <div className="relative z-10 flex justify-center">
             <div
               ref={card5Ref}
-              className={`w-full md:w-[68%] relative rounded-lg pt-12 pb-8 px-7 sm:px-10 bg-gradient-to-b from-white to-amber-50/50  text-center hover:-translate-y-1 transition-all duration-700 ${
+              className={`w-full md:w-[68%] relative rounded-lg pt-12 pb-8 px-7 sm:px-10 bg-gradient-to-b from-white via-[#FAF8F5] to-[#F8F5EE] text-center hover:-translate-y-1 transition-all duration-700 ${
                 reachedStep >= 5
-                  ? "border-2 border-[#C5A25D] "
+                  ? "border-2 border-[#C5A25D]"
                   : "border border-[#2B1E16]/10"
               }`}
             >
               {/* Floating Gold Trophy Icon centered */}
-              <div className="absolute -top-7 left-1/2 -translate-x-1/2 z-20 w-16 h-16 rounded-lg bg-gradient-to-tr from-amber-400 via-[#C5A25D] to-amber-200 border-4 border-white flex items-center justify-center text-[#132026]">
-                <svg className="w-7 h-7 text-[#132026]" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <div className="absolute -top-7 left-1/2 -translate-x-1/2 z-20 w-16 h-16 rounded-lg bg-[#FAF8F5] border-2 border-[#C5A25D] flex items-center justify-center text-[#8C6239]">
+                <svg className="w-7 h-7 text-[#8C6239]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                   <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
                   <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
                   <path d="M4 22h16" />
@@ -330,8 +332,8 @@ export function Milestones() {
                 </svg>
               </div>
 
-              <div className="inline-flex items-center gap-2 px-4 py-1 rounded-lg bg-[#C5A25D]/20 border border-[#C5A25D]/50 text-[#8C6239] text-xs tracking-wider uppercase mb-3">
-                <svg className="w-3.5 h-3.5 text-[#8C6239]" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <div className="inline-flex items-center gap-2 px-4 py-1 rounded-lg bg-[#C5A25D]/20 border border-[#C5A25D]/40 text-[#8C6239] text-xs tracking-wider uppercase mb-3">
+                <svg className="w-3.5 h-3.5 text-[#8C6239]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                   <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
                   <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
                   <path d="M4 22h16" />
@@ -357,4 +359,3 @@ export function Milestones() {
 }
 
 export default Milestones;
-

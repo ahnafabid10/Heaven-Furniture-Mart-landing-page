@@ -70,18 +70,10 @@ export function Testimonials() {
           
           {/* LEFT SIDE: Heading with Hollow Outline typography */}
           <div className="lg:col-span-5 space-y-6">
-            {/* 3-Line Display Headline: "Client" / "Success" (outline) / "Stories" */}
-            <h2 className="text-4xl sm:text-5xl lg:text-[56px] tracking-tight text-[#132026] leading-[1.08]">
+            {/* Display Headline */}
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[44px] text-[#132026] leading-[1.18] tracking-tight">
               Client <br />
-              <span
-                className="text-transparent inline-block my-0.5"
-                style={{
-                  WebkitTextStroke: "1.8px #132026",
-                }}
-              >
-                Success
-              </span> <br />
-              Stories
+              Success Stories
             </h2>
 
             {/* Subtitle */}

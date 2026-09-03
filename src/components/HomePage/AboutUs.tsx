@@ -57,7 +57,7 @@ export function AboutUs() {
 
             {/* Headline in Playfair Serif */}
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-[44px] text-[#132026] leading-[1.18] tracking-tight">
-              Designed. Crafted. Customized.
+              About Us
             </h2>
 
             {/* Main Brand Description (Removed 'Founded in 2020 by Managing Director Abul Kalam Bhuiyan,') */}

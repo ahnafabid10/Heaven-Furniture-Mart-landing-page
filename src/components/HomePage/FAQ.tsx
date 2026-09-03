@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import Link from "next/link";
 
 interface FAQItem {
   id: number;
@@ -62,38 +61,16 @@ export function FAQ() {
           
           {/* LEFT SIDE: Heading & Context */}
           <div className="lg:col-span-5 space-y-6">
-            {/* Display Headline: "Got" (solid) + "Questions?" (hollow outline) */}
-            <h2 className="text-4xl sm:text-5xl lg:text-[56px] tracking-tight text-[#132026] leading-[1.08]">
+            {/* Display Headline */}
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[44px] text-[#132026] leading-[1.18] tracking-tight">
               Got <br />
-              <span
-                className="text-transparent inline-block mt-1"
-                style={{
-                  WebkitTextStroke: "1.8px #132026",
-                }}
-              >
-                Questions?
-              </span>
+              Questions?
             </h2>
 
             {/* Subtitle */}
             <p className="text-sm sm:text-base text-[#2B1E16]/75 font-light leading-relaxed max-w-md">
               Find answers to the most common questions about our bespoke furniture process, wood selection, showroom visits, and white-glove delivery.
             </p>
-
-            {/* Quick Contact Link */}
-            <div className="pt-2">
-              <Link
-                href="https://chat.whatsapp.com/FTk1VXPtsG8J3yJSiTHmZy?mode=gi_t"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-xs sm:text-sm text-[#8C6239] hover:text-[#C5A25D] transition-colors group"
-              >
-                <span>Need custom styling advice? WhatsApp our team</span>
-                <svg className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                </svg>
-              </Link>
-            </div>
           </div>
 
           {/* RIGHT SIDE: Accordion Pills List */}

@@ -151,12 +151,14 @@ export function Footer() {
               Flagship Showroom
             </h4>
             
-            <div className="space-y-3.5 text-xs sm:text-[13px] text-[#FAF8F5]/75">
-              <div className="flex items-start gap-3">
-                <svg className="w-5 h-5 text-[#C5A25D] shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                  <circle cx="12" cy="10" r="3" />
-                </svg>
+            <div className="space-y-4 text-xs sm:text-[13px] text-[#FAF8F5]/75">
+              <div className="flex items-start gap-3.5">
+                <div className="w-9 h-9 rounded-lg bg-white/[0.08] border border-white/15 backdrop-blur-md flex items-center justify-center text-[#C5A25D] shrink-0 mt-0.5">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </div>
                 <div>
                   <p className="leading-relaxed">
                     Agrabad Access Road (opposite RAK Ceramics), Chattogram, Bangladesh
@@ -165,7 +167,7 @@ export function Footer() {
                     href="https://maps.app.goo.gl/xxGh9jYiQ2PKpQR99"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-xs text-[#C5A25D] hover:underline mt-1"
+                    className="inline-flex items-center gap-1 text-xs text-[#C5A25D] hover:underline mt-1.5"
                   >
                     <span>View on Google Maps</span>
                     <svg className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
@@ -175,39 +177,30 @@ export function Footer() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-3">
-                <svg className="w-5 h-5 text-[#C5A25D] shrink-0" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                </svg>
+              <div className="flex items-center gap-3.5">
+                <div className="w-9 h-9 rounded-lg bg-white/[0.08] border border-white/15 backdrop-blur-md flex items-center justify-center text-[#C5A25D] shrink-0">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                </div>
                 <a href="tel:+8801960481983" className="hover:text-white font-medium transition-colors">
                   +880 1960-481983
                 </a>
               </div>
 
-              <div className="flex items-start gap-3 pt-1">
-                <svg className="w-5 h-5 text-[#C5A25D] shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                  <circle cx="12" cy="12" r="10" />
-                  <polyline points="12 6 12 12 16 14" />
-                </svg>
+              <div className="flex items-start gap-3.5 pt-1">
+                <div className="w-9 h-9 rounded-lg bg-white/[0.08] border border-white/15 backdrop-blur-md flex items-center justify-center text-[#C5A25D] shrink-0 mt-0.5">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                  </svg>
+                </div>
                 <div className="text-xs space-y-0.5">
                   <p className="text-white/90 font-medium">Showroom Visiting Hours:</p>
                   <p>Sat – Thu: 10:00 AM – 9:30 PM</p>
                   <p>Friday: 3:00 PM – 9:30 PM</p>
                 </div>
               </div>
-            </div>
-
-            {/* Direct WhatsApp Callout Pill */}
-            <div className="pt-2">
-              <Link
-                href="https://chat.whatsapp.com/FTk1VXPtsG8J3yJSiTHmZy?mode=gi_t"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#C5A25D]/15 border border-[#C5A25D]/40 text-[#C5A25D] hover:bg-[#C5A25D]/25 text-xs tracking-wider transition-all select-none"
-              >
-                <span className="w-2 h-2 rounded-lg bg-[#C5A25D] animate-pulse" />
-                <span>Chat with Senior Stylist on WhatsApp</span>
-              </Link>
             </div>
           </div>
 
@@ -216,7 +209,7 @@ export function Footer() {
         {/* Bottom Copyright & Legal */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#FAF8F5]/50">
           <p>
-            © {new Date().getFullYear()} Heaven Furniture Mart. All rights reserved. Founded by Managing Director Abul Kalam Bhuiyan.
+            © {new Date().getFullYear()} Heaven Furniture Mart. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <span className="hover:text-white transition-colors cursor-pointer">Privacy Policy</span>
