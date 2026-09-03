@@ -56,14 +56,6 @@ export function Banner({
             {subheadline}
           </p>
 
-          {/* Brand Motto Callout */}
-          <div className="flex items-center gap-3 pt-1">
-            <span className="h-px w-10 bg-[#C5A25D]" />
-            <span className="text-xs sm:text-sm tracking-[0.18em] uppercase text-[#C5A25D]">
-              Designed · Crafted · Customized
-            </span>
-          </div>
-
           {/* CTAs */}
           <div className="pt-3 flex flex-wrap items-center gap-4 sm:gap-5">
             {/* Primary CTA with Muted Gold (#C5A25D) */}
@@ -90,50 +82,6 @@ export function Banner({
               </svg>
             </Link>
           </div>
-
-          {/* Trust Highlights Strip */}
-          <div className="pt-8 sm:pt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-[#FAF8F5]/15">
-            <div className="space-y-1">
-              <div className="text-[#C5A25D] text-xs uppercase tracking-wider flex items-center gap-1.5">
-                <svg className="w-3.5 h-3.5 text-[#C5A25D]" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2l2.4 7.2h7.6l-6.1 4.5 2.3 7.3-6.2-4.6-6.2 4.6 2.3-7.3-6.1-4.5h7.6z" />
-                </svg>
-                <span>Free Consultation</span>
-              </div>
-              <p className="text-xs text-[#FAF8F5]/70">One-on-one interior planning</p>
-            </div>
-
-            <div className="space-y-1">
-              <div className="text-[#C5A25D] text-xs uppercase tracking-wider flex items-center gap-1.5">
-                <svg className="w-3.5 h-3.5 text-[#C5A25D]" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2l2.4 7.2h7.6l-6.1 4.5 2.3 7.3-6.2-4.6-6.2 4.6 2.3-7.3-6.1-4.5h7.6z" />
-                </svg>
-                <span>100% Solid Wood</span>
-              </div>
-              <p className="text-xs text-[#FAF8F5]/70">Premium teak & seasoned timber</p>
-            </div>
-
-            <div className="space-y-1">
-              <div className="text-[#C5A25D] text-xs uppercase tracking-wider flex items-center gap-1.5">
-                <svg className="w-3.5 h-3.5 text-[#C5A25D]" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2l2.4 7.2h7.6l-6.1 4.5 2.3 7.3-6.2-4.6-6.2 4.6 2.3-7.3-6.1-4.5h7.6z" />
-                </svg>
-                <span>Agrabad Showroom</span>
-              </div>
-              <p className="text-xs text-[#FAF8F5]/70">Opposite RAK Ceramics</p>
-            </div>
-
-            <div className="space-y-1">
-              <div className="text-[#C5A25D] text-xs uppercase tracking-wider flex items-center gap-1.5">
-                <svg className="w-3.5 h-3.5 text-[#C5A25D]" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2l2.4 7.2h7.6l-6.1 4.5 2.3 7.3-6.2-4.6-6.2 4.6 2.3-7.3-6.1-4.5h7.6z" />
-                </svg>
-                <span>Direct Delivery</span>
-              </div>
-              <p className="text-xs text-[#FAF8F5]/70">Installation included</p>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>

@@ -86,11 +86,11 @@ export function CategoryGrid() {
       <div className="w-full max-w-[1560px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
+        <div className="text-left max-w-2xl mb-10 sm:mb-12">
           <h2 className="font-serif text-2xl sm:text-4xl lg:text-[42px] text-[#132026] tracking-tight">
             Explore By Category
           </h2>
-          <div className="w-12 h-0.5 bg-[#C5A25D] mx-auto my-3.5" />
+          <div className="w-12 h-0.5 bg-[#C5A25D] my-3.5" />
           <p className="text-sm sm:text-base text-[#2B1E16]/75 font-normal">
             Handcrafted with solid seasoned wood and bespoke tailoring for every room of your residence.
           </p>

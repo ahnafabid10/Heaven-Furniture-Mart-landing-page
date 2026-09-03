@@ -8,11 +8,6 @@ export function RequestQuote() {
     <section className="w-full bg-[#FAF8F5] py-24 sm:py-28 lg:py-36 border-t border-[#2B1E16]/10 relative overflow-hidden" id="quote">
       <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         
-        {/* Eyebrow */}
-        <div className="text-xs sm:text-[13px] tracking-[0.25em] uppercase text-[#8C6239] mb-3">
-          GET IN TOUCH
-        </div>
-
         {/* Serif Headline */}
         <h2 className="font-serif text-4xl sm:text-5xl lg:text-[54px] font-normal text-[#2B1E16] leading-tight mb-4 tracking-tight">
           Request a Quote

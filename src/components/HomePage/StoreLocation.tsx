@@ -13,16 +13,6 @@ export function StoreLocation() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-lg border border-[#2B1E16]/20 bg-white/70">
-            <svg className="w-3.5 h-3.5 text-[#8C6239]" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-              <circle cx="12" cy="10" r="3" />
-            </svg>
-            <span className="text-xs uppercase tracking-[0.2em] text-[#8C6239]">
-              FLAGSHIP SHOWROOM · CHATTOGRAM
-            </span>
-          </div>
-
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-[44px] text-[#132026] leading-tight">
             Visit Our <span className="text-[#8C6239]">Agrabad Showroom</span>
           </h2>

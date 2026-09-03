@@ -117,13 +117,6 @@ export function Milestones() {
         
         {/* Header Area */}
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-lg border border-[#2B1E16]/20 bg-white/70">
-            <span className="w-2 h-2 rounded-lg bg-[#C5A25D]" />
-            <span className="text-xs uppercase tracking-[0.2em] text-[#8C6239]">
-              PROOF & MILESTONES
-            </span>
-          </div>
-
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-[44px] text-[#132026] leading-tight">
             Our Journey & <span className="text-[#8C6239]">Defining Milestones</span>
           </h2>

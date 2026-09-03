@@ -70,11 +70,6 @@ export function Testimonials() {
           
           {/* LEFT SIDE: Heading with Hollow Outline typography */}
           <div className="lg:col-span-5 space-y-6">
-            {/* Eyebrow */}
-            <div className="text-xs tracking-[0.25em] uppercase text-[#C5A25D]">
-              TESTIMONIALS
-            </div>
-
             {/* 3-Line Display Headline: "Client" / "Success" (outline) / "Stories" */}
             <h2 className="text-4xl sm:text-5xl lg:text-[56px] tracking-tight text-[#132026] leading-[1.08]">
               Client <br />

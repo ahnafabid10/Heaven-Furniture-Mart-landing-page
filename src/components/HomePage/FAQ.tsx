@@ -62,11 +62,6 @@ export function FAQ() {
           
           {/* LEFT SIDE: Heading & Context */}
           <div className="lg:col-span-5 space-y-6">
-            {/* Eyebrow */}
-            <div className="text-xs tracking-[0.25em] uppercase text-[#C5A25D]">
-              FAQS
-            </div>
-
             {/* Display Headline: "Got" (solid) + "Questions?" (hollow outline) */}
             <h2 className="text-4xl sm:text-5xl lg:text-[56px] tracking-tight text-[#132026] leading-[1.08]">
               Got <br />
