@@ -48,14 +48,6 @@ export function Banner({
       <div className="relative z-10 w-full max-w-[1560px] mx-auto px-4 sm:px-6 lg:px-12 py-16 sm:py-24 lg:py-28">
         <div className="max-w-2xl lg:max-w-3xl space-y-6 sm:space-y-7 text-left">
           
-          {/* Eyebrow / Brand Pitch Tag */}
-          <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-[#132026]/80 border border-[#C5A25D]/40 backdrop-blur-md shadow-sm">
-            <span className="w-2 h-2 rounded-full bg-[#C5A25D] animate-pulse" />
-            <span className="text-[11px] sm:text-xs font-semibold tracking-[0.2em] text-[#C5A25D] uppercase">
-              {tagline}
-            </span>
-          </div>
-
           {/* Strong Headline in Serif */}
           <h1 className="font-serif text-3xl sm:text-5xl lg:text-[56px] xl:text-[64px] font-bold text-[#FAF8F5] leading-[1.12] tracking-tight">
             {headline}

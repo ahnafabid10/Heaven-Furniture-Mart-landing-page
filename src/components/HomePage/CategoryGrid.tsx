@@ -1,0 +1,159 @@
+"use client";
+
+import React, { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+
+export interface CategoryCard {
+  id: string;
+  category: string;
+  subTitle: string;
+  itemCount: string;
+  image: string;
+  href: string;
+}
+
+const CATEGORIES_DATA: CategoryCard[] = [
+  {
+    id: "living-room",
+    category: "LIVING ROOM",
+    subTitle: "Royal Hand-Carved & Velvet Sofas",
+    itemCount: "24+ Designs",
+    image: "/1.jpg",
+    href: "#living-room",
+  },
+  {
+    id: "dining-room",
+    category: "DINING ROOM",
+    subTitle: "Italian Marble & Solid Teak Tables",
+    itemCount: "18+ Sets",
+    image: "/4.jpg",
+    href: "#dining",
+  },
+  {
+    id: "bedroom",
+    category: "BEDROOM",
+    subTitle: "Bespoke Velvet Headboard Suites",
+    itemCount: "16+ Suites",
+    image: "/5.jpg",
+    href: "#bedroom",
+  },
+  {
+    id: "bespoke-suites",
+    category: "BESPOKE SUITES",
+    subTitle: "Custom Sized Living Collections",
+    itemCount: "Tailored to Space",
+    image: "/13.jpg",
+    href: "#bespoke",
+  },
+  {
+    id: "cabinets-display",
+    category: "CABINETS & DISPLAY",
+    subTitle: "Gilded Crockery & Showcases",
+    itemCount: "12+ Designs",
+    image: "/8.jpg",
+    href: "#dining",
+  },
+  {
+    id: "office-storage",
+    category: "OFFICE & STORAGE",
+    subTitle: "Executive Consoles & Desks",
+    itemCount: "10+ Models",
+    image: "/10.jpg",
+    href: "#office",
+  },
+  {
+    id: "tea-accent",
+    category: "TEA & ACCENTS",
+    subTitle: "Hand-Carved Armchairs & Tables",
+    itemCount: "14+ Pairs",
+    image: "/7.jpg",
+    href: "#living-room",
+  },
+  {
+    id: "royal-divans",
+    category: "ROYAL DIVANS",
+    subTitle: "Embroidered Silk & Gold Settees",
+    itemCount: "8+ Masterpieces",
+    image: "/9.jpg",
+    href: "#living-room",
+  },
+];
+
+export function CategoryGrid() {
+  const [activeCard, setActiveCard] = useState<string | null>(null);
+
+  return (
+    <section className="w-full bg-[#FAF8F5] py-16 sm:py-20 lg:py-24" id="collections">
+      <div className="w-full max-w-[1560px] mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Section Header */}
+        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
+          <p className="text-[11px] sm:text-xs uppercase font-bold tracking-[0.25em] text-[#C5A25D] mb-2.5">
+            Curated Collections · Heaven Furniture Mart
+          </p>
+          <h2 className="font-serif text-2xl sm:text-4xl lg:text-[42px] font-bold text-[#132026] tracking-tight">
+            Explore By Category
+          </h2>
+          <div className="w-12 h-0.5 bg-[#C5A25D] mx-auto my-3.5" />
+          <p className="text-sm sm:text-base text-[#2B1E16]/75 font-normal">
+            Handcrafted with solid seasoned wood and bespoke tailoring for every room of your residence.
+          </p>
+        </div>
+
+        {/* 8 Images Grid (4 columns × 2 rows on desktop, 2 columns on mobile/tablet) */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5 lg:gap-6">
+          {CATEGORIES_DATA.map((card) => {
+            return (
+              <Link
+                key={card.id}
+                href={card.href}
+                onMouseEnter={() => setActiveCard(card.id)}
+                onMouseLeave={() => setActiveCard(null)}
+                className="group relative aspect-[4/5] sm:aspect-[3/4] w-full overflow-hidden rounded-md sm:rounded-lg shadow-[0_2px_10px_rgba(0,0,0,0.06)] bg-neutral-900 block cursor-pointer transition-all duration-300 hover:shadow-2xl"
+              >
+                {/* Product Image */}
+                <Image
+                  src={card.image}
+                  alt={`${card.category} - Heaven Furniture Mart`}
+                  fill
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                  className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-108"
+                />
+
+                {/* Base Gradient Overlay (always visible so text is crisp) */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent transition-opacity duration-300" />
+
+                {/* Hover Deep Darkish Overlay from the bottom (Niche theke darkish bhab ta ashe) */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#132026]/95 via-[#132026]/70 to-[#132026]/20 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out" />
+
+
+                {/* Bottom Content Area */}
+                <div className="absolute bottom-0 inset-x-0 p-4 sm:p-5 lg:p-6 z-20 flex flex-col items-center text-center">
+                  
+                  {/* Category Name */}
+                  <h3 className="text-white font-sans font-semibold text-xs sm:text-sm lg:text-[15px] tracking-[0.14em] uppercase drop-shadow-sm transition-transform duration-300 group-hover:-translate-y-1">
+                    {card.category}
+                  </h3>
+
+                  {/* Subtitle that reveals smoothly on hover from the bottom */}
+                  <div className="max-h-0 opacity-0 group-hover:max-h-10 group-hover:opacity-100 transition-all duration-500 ease-out overflow-hidden flex flex-col items-center">
+                    <p className="text-[11px] sm:text-xs text-[#FAF8F5]/85 font-light tracking-wide mt-1 line-clamp-1">
+                      {card.subTitle}
+                    </p>
+                  </div>
+
+                  {/* Subtle Gold Indicator Line at Bottom */}
+                  <div className="w-0 group-hover:w-10 h-0.5 bg-[#C5A25D] mt-2 transition-all duration-300 ease-out rounded-full" />
+                </div>
+              </Link>
+            );
+          })}
+        </div>
+
+      </div>
+    </section>
+  );
+}
+
+export default CategoryGrid;

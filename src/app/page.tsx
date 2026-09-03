@@ -1,15 +1,31 @@
 import Navbar from "@/components/shared/Navbar/Navbar";
+import Banner from "@/components/HomePage/Banner";
+import AboutUs from "@/components/HomePage/AboutUs";
+import WhyChooseUs from "@/components/HomePage/WhyChooseUs";
+import FounderQuote from "@/components/HomePage/FounderQuote";
+import Milestones from "@/components/HomePage/Milestones";
+import CategoryGrid from "@/components/HomePage/CategoryGrid";
+import Testimonials from "@/components/HomePage/Testimonials";
+import FAQ from "@/components/HomePage/FAQ";
+import RequestQuote from "@/components/HomePage/RequestQuote";
+import Footer from "@/components/shared/Footer/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-white">
+    <div className="min-h-screen flex flex-col bg-[#FAF8F5] text-[#2B1E16]">
       <Navbar />
-      <main className="flex-1 max-w-[1560px] w-full mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="bg-neutral-100 rounded-xl p-12 text-center text-neutral-600">
-          <h1 className="text-2xl font-bold text-neutral-900 mb-2">Navbar Preview</h1>
-          <p className="text-sm">Ashley-style navigation bar loaded above.</p>
-        </div>
+      <main className="flex-1 w-full">
+        <Banner />
+        <AboutUs />
+        <WhyChooseUs />
+        <FounderQuote />
+        <Milestones />
+        <CategoryGrid />
+        <Testimonials />
+        <FAQ />
+        <RequestQuote />
       </main>
+      <Footer />
     </div>
   );
 }
